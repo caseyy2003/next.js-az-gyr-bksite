@@ -1,101 +1,144 @@
-import Image from "next/image";
+"use client"; // ✅ Move to the very top
 
-export default function Home() {
+import Head from "next/head";
+import Link from "next/link";
+import { useState } from "react";
+
+const HomePage = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    phone: "",
+    email: "",
+  });
+
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    setSubmitted(true);
+  };
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <Head>
+        <title>Arizona Bankruptcy Attorney | Virtual Debt Relief Assistance</title>
+        <meta name="description" content="Get expert bankruptcy assistance in Arizona. We provide Chapter 7 & Chapter 13 consultations virtually. Free case evaluation." />
+        <meta name="keywords" content="Bankruptcy Attorney, Debt Relief, Chapter 7, Chapter 13, Virtual Bankruptcy Lawyer" />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        {/* JSON-LD Structured Data */}
+        <script 
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LegalService",
+              "name": "Arizona Bankruptcy Law Firm",
+              "description": "Virtual bankruptcy assistance for Chapter 7 & Chapter 13. Get expert debt relief guidance today.",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "4425 E Agave Rd. Suite 110",
+                "addressLocality": "Phoenix",
+                "addressRegion": "AZ",
+                "postalCode": "85044",
+                "addressCountry": "US",
+              },
+              "telephone": "+1-555-555-5555",
+              "url": "https://yourwebsite.com",
+            }),
+          }} 
+        />
+      </Head>
+
+      <div className="container mx-auto text-center py-16">
+        <h1 className="text-3xl font-bold mb-4">Arizona Bankruptcy Attorney</h1>
+        <p className="text-lg mb-6">
+          Struggling with debt? We offer expert bankruptcy consultations for Chapter 7 & Chapter 13—all handled virtually. Get a free evaluation today.
+        </p>
+
+        {/* Lead Generation Form */}
+        <div className="max-w-lg mx-auto bg-white shadow-lg p-6 rounded-lg border">
+          <h2 className="text-xl font-semibold mb-4">Request Your Free Consultation</h2>
+
+          {submitted ? (
+            <p className="text-green-600 font-semibold">Thank you! We will contact you shortly.</p>
+          ) : (
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="grid grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  name="firstName"
+                  placeholder="First Name"
+                  required
+                  className="border p-2 w-full rounded"
+                  onChange={handleChange}
+                />
+                <input
+                  type="text"
+                  name="lastName"
+                  placeholder="Last Name"
+                  required
+                  className="border p-2 w-full rounded"
+                  onChange={handleChange}
+                />
+              </div>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                required
+                className="border p-2 w-full rounded"
+                onChange={handleChange}
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+                className="border p-2 w-full rounded"
+                onChange={handleChange}
+              />
+              <button type="submit" className="bg-blue-600 text-white py-2 px-4 rounded w-full">
+                Get Your Free Evaluation
+              </button>
+            </form>
+          )}
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        {/* Service Areas */}
+        <h2 className="text-2xl font-semibold mt-12">Serving All of Arizona</h2>
+<p className="mb-4">We provide virtual bankruptcy services throughout Arizona, including:</p>
+<ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
+  <li><Link href="/bankruptcy-attorney-phoenix">Phoenix</Link></li>
+  <li><Link href="/bankruptcy-attorney-mesa">Mesa</Link></li>
+  <li><Link href="/bankruptcy-attorney-chandler">Chandler</Link></li>
+  <li><Link href="/bankruptcy-attorney-tempe">Tempe</Link></li>
+  <li><Link href="/bankruptcy-attorney-glendale">Glendale</Link></li>
+  <li><Link href="/bankruptcy-attorney-scottsdale">Scottsdale</Link></li>
+  <li><Link href="/bankruptcy-attorney-peoria">Peoria</Link></li>
+  <li><Link href="/bankruptcy-attorney-surprise">Surprise</Link></li>
+  <li><Link href="/bankruptcy-attorney-avondale">Avondale</Link></li>
+  <li><Link href="/bankruptcy-attorney-goodyear">Goodyear</Link></li>
+  <li><Link href="/bankruptcy-attorney-tucson">Tucson</Link></li>
+  <li><Link href="/bankruptcy-attorney-flagstaff">Flagstaff</Link></li>
+  <li><Link href="/bankruptcy-attorney-prescott">Prescott</Link></li>
+  <li><Link href="/bankruptcy-attorney-kingman">Kingman</Link></li>
+  <li><Link href="/bankruptcy-attorney-casa-grande">Casa Grande</Link></li>
+  <li><Link href="/bankruptcy-attorney-sierra-vista">Sierra Vista</Link></li>
+  <li><Link href="/bankruptcy-attorney-apache-junction">Apache Junction</Link></li>
+  <li><Link href="/bankruptcy-attorney-bullhead-city">Bullhead City</Link></li>
+  <li><Link href="/bankruptcy-attorney-lake-havasu-city">Lake Havasu City</Link></li>
+  <li><Link href="/bankruptcy-attorney-maricopa">Maricopa</Link></li>
+  <li><Link href="/bankruptcy-attorney-yuma">Yuma</Link></li>
+</ul>
+      </div>
+    </>
   );
-}
+};
+
+export default HomePage;
