@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import LeadCaptureForm from "@/components/LeadCaptureForm";
 
 const PrescottBankruptcyPage = () => {
   return (
@@ -102,29 +103,33 @@ const PrescottBankruptcyPage = () => {
         </p>
 
         {/* Lead Capture Form */}
-        <div className="mt-8 p-6 border rounded shadow-lg bg-gray-100">
-          <h2 className="text-xl font-semibold">Get a Free Consultation</h2>
-          <p className="text-sm mb-4">Fill out the form below to schedule your virtual bankruptcy consultation.</p>
-          <form className="space-y-3">
-            <input type="text" placeholder="Full Name" className="w-full p-2 border rounded" required />
-            <input type="email" placeholder="Email Address" className="w-full p-2 border rounded" required />
-            <input type="tel" placeholder="Phone Number" className="w-full p-2 border rounded" required />
-            <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
-              Schedule Consultation
-            </button>
-          </form>
-        </div>
+       <LeadCaptureForm />  
 
         {/* Nearby Cities Section */}
         <h2 className="text-2xl font-semibold mt-12">Nearby Cities We Serve</h2>
         <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
-          <li><Link href="/bankruptcy-attorney-phoenix">Phoenix</Link></li>
-          <li><Link href="/bankruptcy-attorney-flagstaff">Flagstaff</Link></li>
-          <li><Link href="/bankruptcy-attorney-kingman">Kingman</Link></li>
-          <li><Link href="/bankruptcy-attorney-prescott">Prescott</Link></li>
-          <li><Link href="/bankruptcy-attorney-casa-grande">Casa Grande</Link></li>
-          <li><Link href="/bankruptcy-attorney-sierra-vista">Sierra Vista</Link></li>
-        </ul>
+  <li><Link href="/bankruptcy-attorney-phoenix">Phoenix</Link></li>
+  <li><Link href="/bankruptcy-attorney-mesa">Mesa</Link></li>
+  <li><Link href="/bankruptcy-attorney-chandler">Chandler</Link></li>
+  <li><Link href="/bankruptcy-attorney-tempe">Tempe</Link></li>
+  <li><Link href="/bankruptcy-attorney-glendale">Glendale</Link></li>
+  <li><Link href="/bankruptcy-attorney-scottsdale">Scottsdale</Link></li>
+  <li><Link href="/bankruptcy-attorney-peoria">Peoria</Link></li>
+  <li><Link href="/bankruptcy-attorney-surprise">Surprise</Link></li>
+  <li><Link href="/bankruptcy-attorney-avondale">Avondale</Link></li>
+  <li><Link href="/bankruptcy-attorney-goodyear">Goodyear</Link></li>
+  <li><Link href="/bankruptcy-attorney-tucson">Tucson</Link></li>
+  <li><Link href="/bankruptcy-attorney-flagstaff">Flagstaff</Link></li>
+  <li><Link href="/bankruptcy-attorney-prescott">Prescott</Link></li>
+  <li><Link href="/bankruptcy-attorney-kingman">Kingman</Link></li>
+  <li><Link href="/bankruptcy-attorney-casa-grande">Casa Grande</Link></li>
+  <li><Link href="/bankruptcy-attorney-sierra-vista">Sierra Vista</Link></li>
+  <li><Link href="/bankruptcy-attorney-apache-junction">Apache Junction</Link></li>
+  <li><Link href="/bankruptcy-attorney-bullhead-city">Bullhead City</Link></li>
+  <li><Link href="/bankruptcy-attorney-lake-havasu-city">Lake Havasu City</Link></li>
+  <li><Link href="/bankruptcy-attorney-maricopa">Maricopa</Link></li>
+  <li><Link href="/bankruptcy-attorney-yuma">Yuma</Link></li>
+</ul>
 
         {/* Back to Service Areas */}
         <div className="mt-6">

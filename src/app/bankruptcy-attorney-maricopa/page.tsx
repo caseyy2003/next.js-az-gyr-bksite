@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import LeadCaptureForm from "@/components/LeadCaptureForm";
 
 export const metadata = {
   title: "Bankruptcy Attorney in Maricopa | Virtual Debt Relief Assistance",
@@ -83,18 +84,7 @@ const MaricopaBankruptcyPage = () => {
       </p>
 
       {/* Lead Capture Form */}
-      <div className="mt-8 p-6 border rounded shadow-lg bg-gray-100">
-        <h2 className="text-xl font-semibold">Schedule Your Free Consultation</h2>
-        <p className="text-sm mb-4">Fill out the form below to get personalized bankruptcy advice from an attorney.</p>
-        <form className="space-y-3">
-          <input type="text" placeholder="Full Name" className="w-full p-2 border rounded" required />
-          <input type="email" placeholder="Email Address" className="w-full p-2 border rounded" required />
-          <input type="tel" placeholder="Phone Number" className="w-full p-2 border rounded" required />
-          <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
-            Schedule Consultation
-          </button>
-        </form>
-      </div>
+      <LeadCaptureForm />
 
       {/* Nearby Cities Section for Internal Linking */}
       <h2 className="text-2xl font-semibold mt-8">Nearby Cities We Serve</h2>

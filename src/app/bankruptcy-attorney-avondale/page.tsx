@@ -1,15 +1,16 @@
 import Head from "next/head";
 import Link from "next/link";
+import LeadCaptureForm from "@/components/LeadCaptureForm";
 
 export const metadata = {
-  title: "Bankruptcy Attorney in Avondale | Expert Virtual Debt Relief",
-  description: "Need a bankruptcy attorney in Avondale, Arizona? We provide expert virtual bankruptcy services, helping you file for Chapter 7 or Chapter 13 from home.",
-  keywords: "Bankruptcy Attorney Avondale, Chapter 7 Lawyer Avondale, Chapter 13 Attorney Avondale, Virtual Bankruptcy Services"
+  title: "Bankruptcy Attorney in Avondale | Expert Debt Relief",
+  description: "Need a bankruptcy attorney in Avondale, Arizona? We provide expert legal guidance for Chapter 7 and Chapter 13 bankruptcy filings.",
+  keywords: "Bankruptcy Attorney Avondale, Avondale Chapter 7 Lawyer, Avondale Chapter 13 Attorney, Debt Relief in Avondale"
 };
 
 const AvondaleBankruptcyPage = () => {
   return (
-    <div>
+    <div className="container mx-auto p-6">
       {/* SEO Metadata */}
       <Head>
         <script 
@@ -19,7 +20,7 @@ const AvondaleBankruptcyPage = () => {
               "@context": "https://schema.org",
               "@type": "LegalService",
               "name": "Avondale Bankruptcy Attorney",
-              "description": "Experienced virtual bankruptcy services in Avondale, Arizona, helping individuals with Chapter 7 and Chapter 13 filings.",
+              "description": "Experienced virtual bankruptcy services in Avondale, Arizona, providing expert legal guidance for Chapter 7 and Chapter 13 filings.",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "4425 E Agave Rd. Suite 110",
@@ -28,7 +29,7 @@ const AvondaleBankruptcyPage = () => {
                 "postalCode": "85044",
                 "addressCountry": "US"
               },
-              "telephone": "+1-555-555-5555",
+              "telephone": "+1-480-886-0339",
               "url": "https://yourwebsite.com/bankruptcy-attorney-avondale"
             })
           }} 
@@ -36,45 +37,85 @@ const AvondaleBankruptcyPage = () => {
       </Head>
 
       {/* Page Content */}
-      <h1>Bankruptcy Attorney in Avondale</h1>
-      <p>
-        If you’re struggling with overwhelming debt in Avondale, we can help.
-        Our virtual bankruptcy services make it easy to file for Chapter 7 or 
-        Chapter 13 from the comfort of your home.
+      <h1 className="text-3xl font-bold mb-4">Bankruptcy Attorney in Avondale</h1>
+      <p className="mb-6 text-lg">
+        If you are struggling with overwhelming debt in Avondale, bankruptcy may be a viable solution. Our experienced attorneys offer **virtual bankruptcy services**, allowing you to file for **Chapter 7** or **Chapter 13 bankruptcy** remotely. We are committed to helping you regain financial control.
       </p>
 
-      <p>
-        Schedule a free consultation today to explore your bankruptcy options.
-        <Link href="/contact">
-          <button>Get a Free Consultation</button>
-        </Link>
+      <h2 className="text-2xl font-semibold mt-6">Understanding Chapter 7 and Chapter 13 Bankruptcy</h2>
+      <p className="mb-4">
+        Bankruptcy is a legal tool designed to help individuals overcome financial hardships. Understanding the key differences between **Chapter 7** and **Chapter 13** bankruptcy can help you decide the best path forward.
       </p>
+      <ul className="list-disc ml-6">
+        <li><strong>Chapter 7 Bankruptcy</strong> – Discharges most unsecured debts, including medical bills and credit card balances.</li>
+        <li><strong>Chapter 13 Bankruptcy</strong> – Provides a structured repayment plan to help individuals manage debt over time.</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mt-6">Who Qualifies for Bankruptcy in Avondale?</h2>
+      <p className="mb-4">
+        Eligibility for bankruptcy depends on several factors, including **income, assets, and debt type**. To file for **Chapter 7**, you must pass a **Means Test** that evaluates your financial situation. **Chapter 13** is available for those with regular income who want to restructure debt and avoid foreclosure.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-6">How Bankruptcy Can Help You</h2>
+      <p className="mb-4">
+        Filing for bankruptcy can provide significant financial relief and stop aggressive collection actions. Benefits include:
+      </p>
+      <ul className="list-disc ml-6">
+        <li>Halting foreclosure and repossession proceedings.</li>
+        <li>Preventing wage garnishments and bank levies.</li>
+        <li>Eliminating or restructuring unsecured debt.</li>
+        <li>Putting an end to creditor harassment and lawsuits.</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mt-6">Our Virtual Bankruptcy Process</h2>
+      <p className="mb-4">
+        Our law firm simplifies the bankruptcy process through a **virtual legal service**, allowing clients to file remotely. The process includes:
+      </p>
+      <ul className="list-disc ml-6">
+        <li>Comprehensive consultation to assess your financial situation.</li>
+        <li>Preparation and review of all bankruptcy paperwork.</li>
+        <li>Electronic filing of your bankruptcy case.</li>
+        <li>Legal representation throughout the process.</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mt-6">Schedule a Free Bankruptcy Consultation</h2>
+      <p className="mb-4">
+        If you're facing financial difficulties, consulting with an attorney can help you determine the best course of action. Contact us today for a **free consultation** and explore your options for debt relief.
+      </p>
+
+      {/* Lead Capture Form */}
+     <LeadCaptureForm />
 
       {/* Nearby Cities Section for Internal Linking */}
-      <h2>Nearby Cities We Serve</h2>
+      <h2 className="text-2xl font-semibold mt-8">Nearby Cities We Serve</h2>
       <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
-  <li><Link href="/bankruptcy-attorney-phoenix">Phoenix</Link></li>
-  <li><Link href="/bankruptcy-attorney-mesa">Mesa</Link></li>
-  <li><Link href="/bankruptcy-attorney-chandler">Chandler</Link></li>
-  <li><Link href="/bankruptcy-attorney-tempe">Tempe</Link></li>
-  <li><Link href="/bankruptcy-attorney-glendale">Glendale</Link></li>
-  <li><Link href="/bankruptcy-attorney-scottsdale">Scottsdale</Link></li>
-  <li><Link href="/bankruptcy-attorney-peoria">Peoria</Link></li>
-  <li><Link href="/bankruptcy-attorney-surprise">Surprise</Link></li>
-  <li><Link href="/bankruptcy-attorney-avondale">Avondale</Link></li>
-  <li><Link href="/bankruptcy-attorney-goodyear">Goodyear</Link></li>
-  <li><Link href="/bankruptcy-attorney-tucson">Tucson</Link></li>
-  <li><Link href="/bankruptcy-attorney-flagstaff">Flagstaff</Link></li>
-  <li><Link href="/bankruptcy-attorney-prescott">Prescott</Link></li>
-  <li><Link href="/bankruptcy-attorney-kingman">Kingman</Link></li>
-  <li><Link href="/bankruptcy-attorney-casa-grande">Casa Grande</Link></li>
-  <li><Link href="/bankruptcy-attorney-sierra-vista">Sierra Vista</Link></li>
-  <li><Link href="/bankruptcy-attorney-apache-junction">Apache Junction</Link></li>
-  <li><Link href="/bankruptcy-attorney-bullhead-city">Bullhead City</Link></li>
-  <li><Link href="/bankruptcy-attorney-lake-havasu-city">Lake Havasu City</Link></li>
-  <li><Link href="/bankruptcy-attorney-maricopa">Maricopa</Link></li>
-  <li><Link href="/bankruptcy-attorney-yuma">Yuma</Link></li>
-</ul>
+        <li><Link href="/bankruptcy-attorney-phoenix">Phoenix</Link></li>
+        <li><Link href="/bankruptcy-attorney-mesa">Mesa</Link></li>
+        <li><Link href="/bankruptcy-attorney-chandler">Chandler</Link></li>
+        <li><Link href="/bankruptcy-attorney-tempe">Tempe</Link></li>
+        <li><Link href="/bankruptcy-attorney-glendale">Glendale</Link></li>
+        <li><Link href="/bankruptcy-attorney-scottsdale">Scottsdale</Link></li>
+        <li><Link href="/bankruptcy-attorney-peoria">Peoria</Link></li>
+        <li><Link href="/bankruptcy-attorney-surprise">Surprise</Link></li>
+        <li><Link href="/bankruptcy-attorney-avondale">Avondale</Link></li>
+        <li><Link href="/bankruptcy-attorney-goodyear">Goodyear</Link></li>
+        <li><Link href="/bankruptcy-attorney-tucson">Tucson</Link></li>
+        <li><Link href="/bankruptcy-attorney-flagstaff">Flagstaff</Link></li>
+        <li><Link href="/bankruptcy-attorney-prescott">Prescott</Link></li>
+        <li><Link href="/bankruptcy-attorney-kingman">Kingman</Link></li>
+        <li><Link href="/bankruptcy-attorney-casa-grande">Casa Grande</Link></li>
+        <li><Link href="/bankruptcy-attorney-sierra-vista">Sierra Vista</Link></li>
+        <li><Link href="/bankruptcy-attorney-apache-junction">Apache Junction</Link></li>
+        <li><Link href="/bankruptcy-attorney-bullhead-city">Bullhead City</Link></li>
+        <li><Link href="/bankruptcy-attorney-lake-havasu-city">Lake Havasu City</Link></li>
+        <li><Link href="/bankruptcy-attorney-maricopa">Maricopa</Link></li>
+        <li><Link href="/bankruptcy-attorney-yuma">Yuma</Link></li>
+      </ul>
+
+      {/* Back to Homepage */}
+      <div className="mt-6">
+        <Link href="/" className="text-blue-500 hover:underline">← Back to Home</Link>
+      </div>
     </div>
   );
 };

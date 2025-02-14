@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
+import LeadCaptureForm from "@/components/LeadCaptureForm";
 
 export const metadata = {
-  title: "Bankruptcy Attorney in Casa Grande | Virtual Debt Relief Services",
-  description: "Need a bankruptcy attorney in Casa Grande, Arizona? Our virtual bankruptcy services help you file for Chapter 7 or Chapter 13 from home.",
-  keywords: "Bankruptcy Attorney Casa Grande, Chapter 7 Lawyer Casa Grande, Chapter 13 Attorney Casa Grande, Debt Relief Casa Grande"
+  title: "Bankruptcy Attorney in Casa Grande | Expert Debt Relief",
+  description: "Need a bankruptcy attorney in Casa Grande, Arizona? Get expert legal assistance for Chapter 7 and Chapter 13 bankruptcy filings.",
+  keywords: "Bankruptcy Attorney Casa Grande, Casa Grande Chapter 7 Lawyer, Casa Grande Chapter 13 Attorney, Debt Relief in Casa Grande"
 };
 
 const CasaGrandeBankruptcyPage = () => {
@@ -19,7 +20,7 @@ const CasaGrandeBankruptcyPage = () => {
               "@context": "https://schema.org",
               "@type": "LegalService",
               "name": "Casa Grande Bankruptcy Attorney",
-              "description": "Expert virtual bankruptcy assistance in Casa Grande, Arizona, offering Chapter 7 and Chapter 13 bankruptcy filing services remotely.",
+              "description": "Experienced virtual bankruptcy services in Casa Grande, Arizona, helping individuals with Chapter 7 and Chapter 13 filings.",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "4425 E Agave Rd. Suite 110",
@@ -38,74 +39,78 @@ const CasaGrandeBankruptcyPage = () => {
       {/* Page Content */}
       <h1 className="text-3xl font-bold mb-4">Bankruptcy Attorney in Casa Grande</h1>
       <p className="mb-6 text-lg">
-        Are you struggling with overwhelming debt in Casa Grande? Our virtual bankruptcy law firm provides expert legal guidance to help you navigate Chapter 7 and Chapter 13 bankruptcy. We make the process easy and stress-free, so you can get the debt relief you need without leaving home.
+        If you are struggling with overwhelming debt in Casa Grande, bankruptcy may be a viable solution. Our experienced attorneys offer **virtual bankruptcy services**, allowing you to file for **Chapter 7** or **Chapter 13 bankruptcy** from the comfort of your home.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6">Why Consider Bankruptcy in Casa Grande?</h2>
+      <h2 className="text-2xl font-semibold mt-6">How Bankruptcy Can Help</h2>
       <p className="mb-4">
-        Bankruptcy is a legal tool that can help you eliminate debt, stop creditor harassment, and regain financial stability. Whether you are facing wage garnishment, repossession, or foreclosure, filing for bankruptcy may provide a way forward.
+        Bankruptcy is a legal process that helps individuals eliminate or restructure debt. Key benefits include:
       </p>
+      <ul className="list-disc ml-6">
+        <li>Stopping creditor harassment and collection calls.</li>
+        <li>Preventing wage garnishments and bank levies.</li>
+        <li>Halting foreclosure and repossession proceedings.</li>
+        <li>Providing a structured repayment plan or complete debt discharge.</li>
+      </ul>
 
-      <h2 className="text-2xl font-semibold mt-6">Do You Qualify for Bankruptcy?</h2>
+      <h2 className="text-2xl font-semibold mt-6">Understanding Chapter 7 and Chapter 13 Bankruptcy</h2>
       <p className="mb-4">
-        To determine your eligibility for bankruptcy, you must pass the **means test**. This test compares your income to the median income in Arizona. If you qualify, Chapter 7 may allow you to eliminate most unsecured debts. If you have a steady income but need to reorganize your debt, Chapter 13 may be a better option.
+        Knowing the differences between **Chapter 7** and **Chapter 13** bankruptcy can help you determine which option is best for you.
+      </p>
+      <ul className="list-disc ml-6">
+        <li><strong>Chapter 7 Bankruptcy</strong> – A process that eliminates most unsecured debts, such as credit cards and medical bills.</li>
+        <li><strong>Chapter 13 Bankruptcy</strong> – A repayment plan that allows individuals to reorganize debt over three to five years.</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mt-6">Who Qualifies for Bankruptcy in Casa Grande?</h2>
+      <p className="mb-4">
+        Eligibility for bankruptcy depends on income, expenses, and debt type. To file for **Chapter 7**, you must pass a **Means Test** that evaluates your financial situation. **Chapter 13** is available for those with regular income who want to restructure debt and avoid foreclosure.
       </p>
 
       <h2 className="text-2xl font-semibold mt-6">Our Virtual Bankruptcy Process</h2>
       <p className="mb-4">
-        We offer 100% virtual bankruptcy services, so you can file from the comfort of your home. Our process includes:
+        We offer a streamlined **virtual bankruptcy process**, allowing you to complete your filing remotely. The process includes:
       </p>
       <ul className="list-disc ml-6">
-        <li>✔️ A free initial consultation to discuss your financial situation.</li>
-        <li>✔️ Assistance with preparing and filing bankruptcy forms.</li>
-        <li>✔️ Representation throughout the bankruptcy process.</li>
-        <li>✔️ Guidance on rebuilding your credit after bankruptcy.</li>
+        <li>Initial consultation to discuss your financial situation.</li>
+        <li>Assistance in gathering and preparing bankruptcy documents.</li>
+        <li>Electronic filing of your bankruptcy case.</li>
+        <li>Legal representation throughout the process.</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold mt-6">Get Started Today</h2>
+      <h2 className="text-2xl font-semibold mt-6">Schedule a Free Consultation</h2>
       <p className="mb-4">
-        If you are considering bankruptcy in Casa Grande, our experienced attorneys are here to help. Contact us today for a free consultation and take the first step toward financial freedom.
+        If you're considering bankruptcy, speaking with an experienced attorney can help you determine the best option. Contact us today for a **free consultation** and take the first step toward financial freedom.
       </p>
 
       {/* Lead Capture Form */}
-      <div className="mt-8 p-6 border rounded shadow-lg bg-gray-100">
-        <h2 className="text-xl font-semibold">Schedule Your Free Consultation</h2>
-        <p className="text-sm mb-4">Fill out the form below to get expert bankruptcy advice from an experienced attorney.</p>
-        <form className="space-y-3">
-          <input type="text" placeholder="Full Name" className="w-full p-2 border rounded" required />
-          <input type="email" placeholder="Email Address" className="w-full p-2 border rounded" required />
-          <input type="tel" placeholder="Phone Number" className="w-full p-2 border rounded" required />
-          <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
-            Schedule Consultation
-          </button>
-        </form>
-      </div>
+      <LeadCaptureForm />
 
       {/* Nearby Cities Section for Internal Linking */}
       <h2 className="text-2xl font-semibold mt-8">Nearby Cities We Serve</h2>
       <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
-  <li><Link href="/bankruptcy-attorney-phoenix">Phoenix</Link></li>
-  <li><Link href="/bankruptcy-attorney-mesa">Mesa</Link></li>
-  <li><Link href="/bankruptcy-attorney-chandler">Chandler</Link></li>
-  <li><Link href="/bankruptcy-attorney-tempe">Tempe</Link></li>
-  <li><Link href="/bankruptcy-attorney-glendale">Glendale</Link></li>
-  <li><Link href="/bankruptcy-attorney-scottsdale">Scottsdale</Link></li>
-  <li><Link href="/bankruptcy-attorney-peoria">Peoria</Link></li>
-  <li><Link href="/bankruptcy-attorney-surprise">Surprise</Link></li>
-  <li><Link href="/bankruptcy-attorney-avondale">Avondale</Link></li>
-  <li><Link href="/bankruptcy-attorney-goodyear">Goodyear</Link></li>
-  <li><Link href="/bankruptcy-attorney-tucson">Tucson</Link></li>
-  <li><Link href="/bankruptcy-attorney-flagstaff">Flagstaff</Link></li>
-  <li><Link href="/bankruptcy-attorney-prescott">Prescott</Link></li>
-  <li><Link href="/bankruptcy-attorney-kingman">Kingman</Link></li>
-  <li><Link href="/bankruptcy-attorney-casa-grande">Casa Grande</Link></li>
-  <li><Link href="/bankruptcy-attorney-sierra-vista">Sierra Vista</Link></li>
-  <li><Link href="/bankruptcy-attorney-apache-junction">Apache Junction</Link></li>
-  <li><Link href="/bankruptcy-attorney-bullhead-city">Bullhead City</Link></li>
-  <li><Link href="/bankruptcy-attorney-lake-havasu-city">Lake Havasu City</Link></li>
-  <li><Link href="/bankruptcy-attorney-maricopa">Maricopa</Link></li>
-  <li><Link href="/bankruptcy-attorney-yuma">Yuma</Link></li>
-</ul>
+        <li><Link href="/bankruptcy-attorney-phoenix">Phoenix</Link></li>
+        <li><Link href="/bankruptcy-attorney-mesa">Mesa</Link></li>
+        <li><Link href="/bankruptcy-attorney-chandler">Chandler</Link></li>
+        <li><Link href="/bankruptcy-attorney-tempe">Tempe</Link></li>
+        <li><Link href="/bankruptcy-attorney-glendale">Glendale</Link></li>
+        <li><Link href="/bankruptcy-attorney-scottsdale">Scottsdale</Link></li>
+        <li><Link href="/bankruptcy-attorney-peoria">Peoria</Link></li>
+        <li><Link href="/bankruptcy-attorney-surprise">Surprise</Link></li>
+        <li><Link href="/bankruptcy-attorney-avondale">Avondale</Link></li>
+        <li><Link href="/bankruptcy-attorney-goodyear">Goodyear</Link></li>
+        <li><Link href="/bankruptcy-attorney-tucson">Tucson</Link></li>
+        <li><Link href="/bankruptcy-attorney-flagstaff">Flagstaff</Link></li>
+        <li><Link href="/bankruptcy-attorney-prescott">Prescott</Link></li>
+        <li><Link href="/bankruptcy-attorney-kingman">Kingman</Link></li>
+        <li><Link href="/bankruptcy-attorney-casa-grande">Casa Grande</Link></li>
+        <li><Link href="/bankruptcy-attorney-sierra-vista">Sierra Vista</Link></li>
+        <li><Link href="/bankruptcy-attorney-apache-junction">Apache Junction</Link></li>
+        <li><Link href="/bankruptcy-attorney-bullhead-city">Bullhead City</Link></li>
+        <li><Link href="/bankruptcy-attorney-lake-havasu-city">Lake Havasu City</Link></li>
+        <li><Link href="/bankruptcy-attorney-maricopa">Maricopa</Link></li>
+        <li><Link href="/bankruptcy-attorney-yuma">Yuma</Link></li>
+      </ul>
 
       {/* Back to Homepage */}
       <div className="mt-6">

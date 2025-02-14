@@ -1,4 +1,5 @@
 import Head from "next/head";
+import LeadCaptureForm from "@/components/LeadCaptureForm";
 
 const ContactPage = () => {
   return (
@@ -25,6 +26,7 @@ const ContactPage = () => {
         Reach out today to schedule your **free bankruptcy consultation** and take the first step toward financial freedom.
       </p>
 
+      {/* Contact Grid (Fixed Closing `div`) */}
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Contact Information */}
         <div className="p-6 border rounded shadow-lg bg-gray-100">
@@ -37,20 +39,8 @@ const ContactPage = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="p-6 border rounded shadow-lg bg-gray-100">
-          <h2 className="text-xl font-semibold mb-4">Request a Free Consultation</h2>
-          <p className="text-sm mb-4">Fill out the form below, and an attorney will reach out to you shortly.</p>
-          <form className="space-y-3">
-            <input type="text" placeholder="Full Name" className="w-full p-2 border rounded" required />
-            <input type="email" placeholder="Email Address" className="w-full p-2 border rounded" required />
-            <input type="tel" placeholder="Phone Number" className="w-full p-2 border rounded" required />
-            <textarea placeholder="How can we help you?" className="w-full p-2 border rounded" rows={4} required></textarea>
-            <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
-              Submit Inquiry
-            </button>
-          </form>
-        </div>
-      </div>
+        <LeadCaptureForm />
+      </div>  {/* ✅ Added closing `</div>` here */}
 
       {/* Additional Contact Options */}
       <div className="mt-8">

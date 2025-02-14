@@ -1,4 +1,5 @@
 import Head from "next/head";
+import LeadCaptureForm from "@/components/LeadCaptureForm";
 
 const AboutPage = () => {
   return (
@@ -102,17 +103,7 @@ const AboutPage = () => {
       <p>Contact us today for a free consultation and take the first step toward financial relief.</p>
 
       {/* Lead Capture Form */}
-      <div className="mt-8 p-6 border rounded shadow-lg bg-gray-100">
-        <h2 className="text-xl font-semibold">Request Your Free Bankruptcy Consultation</h2>
-        <form className="space-y-3">
-          <input type="text" placeholder="Full Name" className="w-full p-2 border rounded" required />
-          <input type="email" placeholder="Email Address" className="w-full p-2 border rounded" required />
-          <input type="tel" placeholder="Phone Number" className="w-full p-2 border rounded" required />
-          <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
-            Schedule Consultation
-          </button>
-        </form>
-      </div>
+      <LeadCaptureForm />
     </div>
   );
 };

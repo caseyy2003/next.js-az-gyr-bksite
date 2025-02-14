@@ -1,15 +1,17 @@
 import Head from "next/head";
 import Link from "next/link";
+import LeadCaptureForm from "@/components/LeadCaptureForm";
+
 
 export const metadata = {
-  title: "Bankruptcy Attorney in Tucson | Virtual Debt Relief Services",
-  description: "Need a bankruptcy attorney in Tucson, Arizona? We provide expert virtual bankruptcy services for Chapter 7 and Chapter 13.",
-  keywords: "Bankruptcy Attorney Tucson, Chapter 7 Lawyer Tucson, Chapter 13 Attorney Tucson, Virtual Bankruptcy Services"
+  title: "Bankruptcy Attorney in Tucson | Expert Legal Assistance",
+  description: "Looking for a bankruptcy attorney in Tucson, Arizona? Get expert legal assistance for Chapter 7 and Chapter 13 bankruptcy filings.",
+  keywords: "Bankruptcy Attorney Tucson, Tucson Chapter 7 Lawyer, Tucson Chapter 13 Attorney, Debt Relief in Tucson"
 };
 
 const TucsonBankruptcyPage = () => {
   return (
-    <div>
+    <div className="container mx-auto p-6">
       {/* SEO Metadata */}
       <Head>
         <script 
@@ -19,7 +21,7 @@ const TucsonBankruptcyPage = () => {
               "@context": "https://schema.org",
               "@type": "LegalService",
               "name": "Tucson Bankruptcy Attorney",
-              "description": "Experienced virtual bankruptcy services in Tucson, Arizona, helping individuals with Chapter 7 and Chapter 13 filings.",
+              "description": "Experienced virtual bankruptcy services in Tucson, Arizona, assisting individuals with Chapter 7 and Chapter 13 bankruptcy filings.",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "4425 E Agave Rd. Suite 110",
@@ -28,7 +30,7 @@ const TucsonBankruptcyPage = () => {
                 "postalCode": "85044",
                 "addressCountry": "US"
               },
-              "telephone": "480-886-0339",
+              "telephone": "+1-480-886-0339",
               "url": "https://yourwebsite.com/bankruptcy-attorney-tucson"
             })
           }} 
@@ -36,60 +38,84 @@ const TucsonBankruptcyPage = () => {
       </Head>
 
       {/* Page Content */}
-      <h1>Bankruptcy Attorney in Tucson</h1>
-      <p>
-        Are you struggling with overwhelming debt in Tucson? Our virtual bankruptcy services allow you to file for 
-        Chapter 7 or Chapter 13 bankruptcy from the comfort of your home. We provide personalized, expert legal 
-        assistance to help you achieve financial freedom.
+      <h1 className="text-3xl font-bold mb-4">Bankruptcy Attorney in Tucson</h1>
+      <p className="mb-6 text-lg">
+        If you are struggling with overwhelming debt in Tucson, bankruptcy may provide the financial relief you need. Our experienced attorneys offer virtual bankruptcy services, allowing you to file for Chapter 7 or Chapter 13 bankruptcy remotely. We are committed to helping you regain financial stability.
       </p>
 
-      <p>
-        <strong>Why Choose Us?</strong>  
-        - 🏠 **100% Virtual Process** – No need to visit an office  
-        - 💼 **Experienced Bankruptcy Attorney** – 17+ years of experience  
-        - 📞 **Free Consultation** – Call **480-886-0339** today!
+      <h2 className="text-2xl font-semibold mt-6">How Bankruptcy Can Help</h2>
+      <p className="mb-4">
+        Bankruptcy is a legal solution that allows individuals to eliminate or restructure debt. Benefits include:
+      </p>
+      <ul className="list-disc ml-6">
+        <li>Stopping creditor harassment and collection calls</li>
+        <li>Preventing wage garnishments and bank levies</li>
+        <li>Halting foreclosure and repossession proceedings</li>
+        <li>Providing a structured repayment plan or complete debt discharge</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mt-6">Chapter 7 and Chapter 13 Bankruptcy</h2>
+      <p className="mb-4">
+        Understanding the differences between Chapter 7 and Chapter 13 bankruptcy can help determine the best path forward.
+      </p>
+      <ul className="list-disc ml-6">
+        <li><strong>Chapter 7 Bankruptcy</strong> – Eliminates most unsecured debts, including medical bills and credit card balances</li>
+        <li><strong>Chapter 13 Bankruptcy</strong> – A structured repayment plan that allows individuals to manage debt over time while keeping assets</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mt-6">Who Qualifies for Bankruptcy in Tucson?</h2>
+      <p className="mb-4">
+        Bankruptcy eligibility depends on several factors, including income, assets, and debt type. To file for Chapter 7, you must pass a Means Test that evaluates your financial situation. Chapter 13 is available for those with a regular income who want to restructure debt and avoid foreclosure.
       </p>
 
-      <p>
-        Schedule a free consultation today to explore your bankruptcy options.
-        <Link href="/contact">
-          <button>Get a Free Consultation</button>
-        </Link>
+      <h2 className="text-2xl font-semibold mt-6">Our Virtual Bankruptcy Process</h2>
+      <p className="mb-4">
+        We offer a streamlined virtual bankruptcy process, allowing you to complete your filing remotely. The process includes:
       </p>
+      <ul className="list-disc ml-6">
+        <li>Comprehensive consultation to assess your financial situation</li>
+        <li>Preparation and review of all bankruptcy paperwork</li>
+        <li>Electronic filing of your bankruptcy case</li>
+        <li>Legal representation throughout the process</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mt-6">Schedule a Free Bankruptcy Consultation</h2>
+      <p className="mb-4">
+        If you are considering bankruptcy, speaking with an experienced attorney can help you determine the best course of action. Contact us today for a free consultation and take the first step toward financial relief.
+      </p>
+
+      <LeadCaptureForm />
 
       {/* Nearby Cities Section for Internal Linking */}
-      <h2>Nearby Cities We Serve</h2>
+      <h2 className="text-2xl font-semibold mt-8">Nearby Cities We Serve</h2>
       <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
-  <li><Link href="/bankruptcy-attorney-phoenix">Phoenix</Link></li>
-  <li><Link href="/bankruptcy-attorney-mesa">Mesa</Link></li>
-  <li><Link href="/bankruptcy-attorney-chandler">Chandler</Link></li>
-  <li><Link href="/bankruptcy-attorney-tempe">Tempe</Link></li>
-  <li><Link href="/bankruptcy-attorney-glendale">Glendale</Link></li>
-  <li><Link href="/bankruptcy-attorney-scottsdale">Scottsdale</Link></li>
-  <li><Link href="/bankruptcy-attorney-peoria">Peoria</Link></li>
-  <li><Link href="/bankruptcy-attorney-surprise">Surprise</Link></li>
-  <li><Link href="/bankruptcy-attorney-avondale">Avondale</Link></li>
-  <li><Link href="/bankruptcy-attorney-goodyear">Goodyear</Link></li>
-  <li><Link href="/bankruptcy-attorney-tucson">Tucson</Link></li>
-  <li><Link href="/bankruptcy-attorney-flagstaff">Flagstaff</Link></li>
-  <li><Link href="/bankruptcy-attorney-prescott">Prescott</Link></li>
-  <li><Link href="/bankruptcy-attorney-kingman">Kingman</Link></li>
-  <li><Link href="/bankruptcy-attorney-casa-grande">Casa Grande</Link></li>
-  <li><Link href="/bankruptcy-attorney-sierra-vista">Sierra Vista</Link></li>
-  <li><Link href="/bankruptcy-attorney-apache-junction">Apache Junction</Link></li>
-  <li><Link href="/bankruptcy-attorney-bullhead-city">Bullhead City</Link></li>
-  <li><Link href="/bankruptcy-attorney-lake-havasu-city">Lake Havasu City</Link></li>
-  <li><Link href="/bankruptcy-attorney-maricopa">Maricopa</Link></li>
-  <li><Link href="/bankruptcy-attorney-yuma">Yuma</Link></li>
-</ul>
-
-      {/* Featured Blog Posts */}
-      <h2>Learn More About Bankruptcy</h2>
-      <ul>
-        <li><Link href="/arizona-bankruptcy-lawyers-blog/chapter-7-bankruptcy">Understanding Chapter 7 Bankruptcy</Link></li>
-        <li><Link href="/arizona-bankruptcy-lawyers-blog/chapter-13-bankruptcy">Chapter 13 Bankruptcy Explained</Link></li>
-        <li><Link href="/arizona-bankruptcy-lawyers-blog/bankruptcy-credit-score">How Bankruptcy Affects Your Credit Score</Link></li>
+        <li><Link href="/bankruptcy-attorney-phoenix">Phoenix</Link></li>
+        <li><Link href="/bankruptcy-attorney-mesa">Mesa</Link></li>
+        <li><Link href="/bankruptcy-attorney-chandler">Chandler</Link></li>
+        <li><Link href="/bankruptcy-attorney-tempe">Tempe</Link></li>
+        <li><Link href="/bankruptcy-attorney-glendale">Glendale</Link></li>
+        <li><Link href="/bankruptcy-attorney-scottsdale">Scottsdale</Link></li>
+        <li><Link href="/bankruptcy-attorney-peoria">Peoria</Link></li>
+        <li><Link href="/bankruptcy-attorney-surprise">Surprise</Link></li>
+        <li><Link href="/bankruptcy-attorney-avondale">Avondale</Link></li>
+        <li><Link href="/bankruptcy-attorney-goodyear">Goodyear</Link></li>
+        <li><Link href="/bankruptcy-attorney-tucson">Tucson</Link></li>
+        <li><Link href="/bankruptcy-attorney-flagstaff">Flagstaff</Link></li>
+        <li><Link href="/bankruptcy-attorney-prescott">Prescott</Link></li>
+        <li><Link href="/bankruptcy-attorney-kingman">Kingman</Link></li>
+        <li><Link href="/bankruptcy-attorney-casa-grande">Casa Grande</Link></li>
+        <li><Link href="/bankruptcy-attorney-sierra-vista">Sierra Vista</Link></li>
+        <li><Link href="/bankruptcy-attorney-apache-junction">Apache Junction</Link></li>
+        <li><Link href="/bankruptcy-attorney-bullhead-city">Bullhead City</Link></li>
+        <li><Link href="/bankruptcy-attorney-lake-havasu-city">Lake Havasu City</Link></li>
+        <li><Link href="/bankruptcy-attorney-maricopa">Maricopa</Link></li>
+        <li><Link href="/bankruptcy-attorney-yuma">Yuma</Link></li>
       </ul>
+
+      {/* Back to Homepage */}
+      <div className="mt-6">
+        <Link href="/" className="text-blue-500 hover:underline">← Back to Home</Link>
+      </div>
     </div>
   );
 };

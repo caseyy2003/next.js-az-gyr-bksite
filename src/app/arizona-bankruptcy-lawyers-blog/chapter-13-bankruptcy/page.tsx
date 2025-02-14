@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
+import LeadCaptureForm from "@/components/LeadCaptureForm";
 
 const serviceAreas = [
   { name: "Phoenix", slug: "phoenix" },
@@ -124,18 +125,7 @@ const Chapter13BankruptcyPage = () => {
       <p>Considering Chapter 13? An **experienced bankruptcy attorney** can guide you through the process.</p>
 
       {/* Lead Capture Form */}
-      <div className="mt-8 p-6 border rounded shadow-lg bg-gray-100">
-        <h2 className="text-xl font-semibold">Schedule Your Free Consultation</h2>
-        <p className="text-sm mb-4">Fill out the form below to get expert bankruptcy advice.</p>
-        <form className="space-y-3">
-          <input type="text" placeholder="Full Name" className="w-full p-2 border rounded" required />
-          <input type="email" placeholder="Email Address" className="w-full p-2 border rounded" required />
-          <input type="tel" placeholder="Phone Number" className="w-full p-2 border rounded" required />
-          <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
-            Schedule Consultation
-          </button>
-        </form>
-      </div>
+    <LeadCaptureForm />
 
       {/* Service Areas */}
       <h2 className="text-2xl font-semibold mt-6">Service Areas</h2>
@@ -151,7 +141,8 @@ const Chapter13BankruptcyPage = () => {
 
       {/* Back to Blog */}
       <div className="mt-6">
-        <Link href="/blog" className="text-blue-500 hover:underline">← Back to Blog</Link>
+      <Link href="/arizona-bankruptcy-lawyers-blog" className="text-blue-500 hover:underline">← Back to Blog</Link>
+
       </div>
     </div>
   );
