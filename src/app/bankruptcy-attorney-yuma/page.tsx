@@ -1,116 +1,76 @@
-import LeadCaptureForm from "@/components/LeadCaptureForm";
-import Head from "next/head";
 import Link from "next/link";
+import LeadCaptureForm from "@/components/LeadCaptureForm";
+import { serviceAreas } from "@/constants/serviceAreas";
+import { generateMetadata } from "@/utils/generateMetadata"; // Import the function
 
-export const metadata = {
-  title: "Bankruptcy Attorney in Yuma | Virtual Debt Relief Services",
-  description: "Need a bankruptcy attorney in Yuma, Arizona? Our virtual bankruptcy services help you file for Chapter 7 or Chapter 13 from the comfort of your home.",
-  keywords: "Bankruptcy Attorney Yuma, Chapter 7 Lawyer Yuma, Chapter 13 Attorney Yuma, Virtual Debt Relief Services"
-};
+export const metadata = generateMetadata("Yuma"); // Dynamic Metadata
 
 const YumaBankruptcyPage = () => {
   return (
     <div className="container mx-auto p-6">
-      {/* SEO Metadata */}
-      <Head>
-        <script 
-          type="application/ld+json" 
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LegalService",
-              "name": "Yuma Bankruptcy Attorney",
-              "description": "Professional virtual bankruptcy services in Yuma, Arizona, helping individuals with Chapter 7 and Chapter 13 filings remotely.",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "4425 E Agave Rd. Suite 110",
-                "addressLocality": "Phoenix",
-                "addressRegion": "AZ",
-                "postalCode": "85044",
-                "addressCountry": "US"
-              },
-              "telephone": "+1-480-886-0339",
-              "url": "https://yourwebsite.com/bankruptcy-attorney-yuma"
-            })
-          }} 
-        />
-      </Head>
-
+      
       {/* Page Content */}
       <h1 className="text-3xl font-bold mb-4">Bankruptcy Attorney in Yuma</h1>
       <p className="mb-6 text-lg">
-        If you're facing overwhelming debt in Yuma, Arizona, bankruptcy may provide the relief you need. Whether you're dealing with **credit card debt, medical bills, wage garnishments, or foreclosure threats**, our experienced bankruptcy attorneys can help you navigate the process and regain financial stability.
+        If you’re struggling with debt in Yuma, filing for bankruptcy may be the solution you need to regain control of your financial future. Our **experienced bankruptcy attorneys** provide **virtual legal services**, allowing you to complete the process from the comfort of your home. Whether you need **Chapter 7 bankruptcy** for debt elimination or **Chapter 13 bankruptcy** for restructuring, we are here to guide you every step of the way.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6">How Bankruptcy Can Help You</h2>
+      <h2 className="text-2xl font-semibold mt-6">Understanding Your Bankruptcy Options</h2>
       <p className="mb-4">
-        Bankruptcy is a **legal tool** designed to help individuals eliminate or restructure their debts. Filing for **Chapter 7 or Chapter 13 bankruptcy** can:
-      </p>
-      <ul className="list-disc ml-6">
-        <li>✅ **Stop harassing creditor calls and collection actions**</li>
-        <li>✅ **Prevent wage garnishment and bank levies**</li>
-        <li>✅ **Stop foreclosure and repossession proceedings**</li>
-        <li>✅ **Discharge qualifying debts and give you a fresh start**</li>
-      </ul>
-
-      <h2 className="text-2xl font-semibold mt-6">Chapter 7 vs. Chapter 13 Bankruptcy</h2>
-      <p className="mb-4">
-        There are two main types of personal bankruptcy filings available in Arizona:
+        Bankruptcy is a legal process designed to help individuals eliminate or restructure their debt. The most common types of bankruptcy are:
       </p>
       <ul className="list-disc ml-6">
-        <li><strong>Chapter 7 Bankruptcy:</strong> Also known as "liquidation bankruptcy," Chapter 7 eliminates most unsecured debts, such as **credit cards, personal loans, and medical bills**.</li>
-        <li><strong>Chapter 13 Bankruptcy:</strong> This is a structured repayment plan that allows individuals to **catch up on secured debts** like **mortgage payments, car loans, and taxes** while keeping their assets.</li>
+        <li><strong>Chapter 7 Bankruptcy</strong> – Erases most unsecured debts, including credit card balances and medical bills, giving you a fresh start.</li>
+        <li><strong>Chapter 13 Bankruptcy</strong> – Allows individuals with regular income to create a structured repayment plan to catch up on debts while protecting assets.</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold mt-6">Who Qualifies for Bankruptcy in Yuma?</h2>
+      <h2 className="text-2xl font-semibold mt-6">Benefits of Filing for Bankruptcy in Yuma</h2>
       <p className="mb-4">
-        To qualify for **Chapter 7 bankruptcy**, you must pass the **Means Test**, which evaluates your income and financial situation. If you don't qualify for Chapter 7, **Chapter 13 bankruptcy** may be a viable alternative, allowing you to reorganize your debts into manageable payments.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-6">Our Virtual Bankruptcy Process</h2>
-      <p className="mb-4">
-        Our firm offers a **fully virtual bankruptcy service**, making it easy for Yuma residents to file from the comfort of their homes. The process includes:
+        Bankruptcy provides immediate relief from debt collectors and long-term financial benefits, including:
       </p>
       <ul className="list-disc ml-6">
-        <li>✔️ **Free Consultation:** Discuss your financial situation with a bankruptcy attorney.</li>
-        <li>✔️ **Document Preparation:** We help gather and complete all necessary paperwork.</li>
-        <li>✔️ **Electronic Filing:** Submit your case without needing to visit a law office.</li>
-        <li>✔️ **Legal Representation:** Get guidance every step of the way from an experienced lawyer.</li>
+        <li>Stops creditor harassment and collection calls.</li>
+        <li>Prevents wage garnishments and lawsuits.</li>
+        <li>Stops foreclosure and repossession actions.</li>
+        <li>Eliminates eligible unsecured debts, offering financial relief.</li>
+        <li>Allows you to rebuild your credit over time.</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold mt-6">Take Control of Your Financial Future</h2>
+      <h2 className="text-2xl font-semibold mt-6">Who Qualifies for Bankruptcy?</h2>
       <p className="mb-4">
-        Don’t let debt control your life. Take the **first step toward financial freedom** by scheduling a free consultation today.
+        To file for **Chapter 7**, you must pass a **Means Test**, which compares your income to Arizona’s median. **Chapter 13** is ideal for individuals with regular income who need to reorganize their debts under court supervision. Our attorneys will assess your eligibility and provide personalized legal guidance.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-6">How Our Virtual Bankruptcy Services Work</h2>
+      <p className="mb-4">
+        Our firm offers a **virtual bankruptcy process**, providing legal assistance remotely. The process includes:
+      </p>
+      <ul className="list-disc ml-6">
+        <li>Free consultation to evaluate your financial situation.</li>
+        <li>Preparation and filing of all bankruptcy paperwork.</li>
+        <li>Electronic submission of your bankruptcy petition.</li>
+        <li>Legal representation throughout the entire process.</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mt-6">Schedule a Free Bankruptcy Consultation</h2>
+      <p className="mb-4">
+        If you’re considering bankruptcy, consulting with an attorney can help you determine the best course of action. Contact us today for a **free consultation** and take the first step toward financial stability.
       </p>
 
       {/* Lead Capture Form */}
-     <LeadCaptureForm />
+      <LeadCaptureForm />
 
       {/* Nearby Cities Section for Internal Linking */}
       <h2 className="text-2xl font-semibold mt-8">Nearby Cities We Serve</h2>
       <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
-  <li><Link href="/bankruptcy-attorney-phoenix">Phoenix</Link></li>
-  <li><Link href="/bankruptcy-attorney-mesa">Mesa</Link></li>
-  <li><Link href="/bankruptcy-attorney-chandler">Chandler</Link></li>
-  <li><Link href="/bankruptcy-attorney-tempe">Tempe</Link></li>
-  <li><Link href="/bankruptcy-attorney-glendale">Glendale</Link></li>
-  <li><Link href="/bankruptcy-attorney-scottsdale">Scottsdale</Link></li>
-  <li><Link href="/bankruptcy-attorney-peoria">Peoria</Link></li>
-  <li><Link href="/bankruptcy-attorney-surprise">Surprise</Link></li>
-  <li><Link href="/bankruptcy-attorney-avondale">Avondale</Link></li>
-  <li><Link href="/bankruptcy-attorney-goodyear">Goodyear</Link></li>
-  <li><Link href="/bankruptcy-attorney-tucson">Tucson</Link></li>
-  <li><Link href="/bankruptcy-attorney-flagstaff">Flagstaff</Link></li>
-  <li><Link href="/bankruptcy-attorney-prescott">Prescott</Link></li>
-  <li><Link href="/bankruptcy-attorney-kingman">Kingman</Link></li>
-  <li><Link href="/bankruptcy-attorney-casa-grande">Casa Grande</Link></li>
-  <li><Link href="/bankruptcy-attorney-sierra-vista">Sierra Vista</Link></li>
-  <li><Link href="/bankruptcy-attorney-apache-junction">Apache Junction</Link></li>
-  <li><Link href="/bankruptcy-attorney-bullhead-city">Bullhead City</Link></li>
-  <li><Link href="/bankruptcy-attorney-lake-havasu-city">Lake Havasu City</Link></li>
-  <li><Link href="/bankruptcy-attorney-maricopa">Maricopa</Link></li>
-  <li><Link href="/bankruptcy-attorney-yuma">Yuma</Link></li>
-</ul>
+        {serviceAreas.map((area) => (
+          <li key={area.slug}>
+            <Link href={`/bankruptcy-attorney-${area.slug}`} className="text-blue-600 hover:underline">
+              Bankruptcy Attorney in {area.name}
+            </Link>
+          </li>
+        ))}
+      </ul>
 
       {/* Back to Homepage */}
       <div className="mt-6">

@@ -3,6 +3,8 @@
 import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
+import LeadCaptureForm from "@/components/LeadCaptureForm";
+import { serviceAreas } from "@/constants/serviceAreas";
 
 const HomePage = () => {
   const [formData, setFormData] = useState({
@@ -62,80 +64,20 @@ const HomePage = () => {
         </p>
 
         {/* Lead Generation Form */}
-        <div className="max-w-lg mx-auto bg-white shadow-lg p-6 rounded-lg border">
-          <h2 className="text-xl font-semibold mb-4">Request Your Free Consultation</h2>
-
-          {submitted ? (
-            <p className="text-green-600 font-semibold">Thank you! We will contact you shortly.</p>
-          ) : (
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <input
-                  type="text"
-                  name="firstName"
-                  placeholder="First Name"
-                  required
-                  className="border p-2 w-full rounded"
-                  onChange={handleChange}
-                />
-                <input
-                  type="text"
-                  name="lastName"
-                  placeholder="Last Name"
-                  required
-                  className="border p-2 w-full rounded"
-                  onChange={handleChange}
-                />
-              </div>
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Phone Number"
-                required
-                className="border p-2 w-full rounded"
-                onChange={handleChange}
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                required
-                className="border p-2 w-full rounded"
-                onChange={handleChange}
-              />
-              <button type="submit" className="bg-blue-600 text-white py-2 px-4 rounded w-full">
-                Get Your Free Evaluation
-              </button>
-            </form>
-          )}
-        </div>
+        <LeadCaptureForm />
 
         {/* Service Areas */}
         <h2 className="text-2xl font-semibold mt-12">Serving All of Arizona</h2>
-<p className="mb-4">We provide virtual bankruptcy services throughout Arizona, including:</p>
-<ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
-  <li><Link href="/bankruptcy-attorney-phoenix">Phoenix</Link></li>
-  <li><Link href="/bankruptcy-attorney-mesa">Mesa</Link></li>
-  <li><Link href="/bankruptcy-attorney-chandler">Chandler</Link></li>
-  <li><Link href="/bankruptcy-attorney-tempe">Tempe</Link></li>
-  <li><Link href="/bankruptcy-attorney-glendale">Glendale</Link></li>
-  <li><Link href="/bankruptcy-attorney-scottsdale">Scottsdale</Link></li>
-  <li><Link href="/bankruptcy-attorney-peoria">Peoria</Link></li>
-  <li><Link href="/bankruptcy-attorney-surprise">Surprise</Link></li>
-  <li><Link href="/bankruptcy-attorney-avondale">Avondale</Link></li>
-  <li><Link href="/bankruptcy-attorney-goodyear">Goodyear</Link></li>
-  <li><Link href="/bankruptcy-attorney-tucson">Tucson</Link></li>
-  <li><Link href="/bankruptcy-attorney-flagstaff">Flagstaff</Link></li>
-  <li><Link href="/bankruptcy-attorney-prescott">Prescott</Link></li>
-  <li><Link href="/bankruptcy-attorney-kingman">Kingman</Link></li>
-  <li><Link href="/bankruptcy-attorney-casa-grande">Casa Grande</Link></li>
-  <li><Link href="/bankruptcy-attorney-sierra-vista">Sierra Vista</Link></li>
-  <li><Link href="/bankruptcy-attorney-apache-junction">Apache Junction</Link></li>
-  <li><Link href="/bankruptcy-attorney-bullhead-city">Bullhead City</Link></li>
-  <li><Link href="/bankruptcy-attorney-lake-havasu-city">Lake Havasu City</Link></li>
-  <li><Link href="/bankruptcy-attorney-maricopa">Maricopa</Link></li>
-  <li><Link href="/bankruptcy-attorney-yuma">Yuma</Link></li>
-</ul>
+        <br />
+      <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
+        {serviceAreas.map((area) => (
+          <li key={area.slug}>
+            <Link href={`/bankruptcy-attorney-${area.slug}`} className="text-blue-600 hover:underline">
+              Bankruptcy Attorney in {area.name}
+            </Link>
+          </li>
+        ))}
+      </ul>
       </div>
     </>
   );

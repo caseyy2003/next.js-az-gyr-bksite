@@ -1,86 +1,59 @@
-import Head from "next/head";
 import Link from "next/link";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
+import { serviceAreas } from "@/constants/serviceAreas";
+import { generateMetadata } from "@/utils/generateMetadata"; // Import the function
 
-export const metadata = {
-  title: "Bankruptcy Attorney in Maricopa | Virtual Debt Relief Assistance",
-  description: "Struggling with debt in Maricopa, Arizona? Our experienced virtual bankruptcy attorneys can help you file for Chapter 7 or Chapter 13 bankruptcy from home.",
-  keywords: "Bankruptcy Attorney Maricopa, Chapter 7 Lawyer Maricopa, Chapter 13 Attorney Maricopa, Virtual Debt Relief Services"
-};
+export const metadata = generateMetadata("Maricopa"); // Dynamic Metadata
 
 const MaricopaBankruptcyPage = () => {
   return (
     <div className="container mx-auto p-6">
-      {/* SEO Metadata */}
-      <Head>
-        <script 
-          type="application/ld+json" 
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LegalService",
-              "name": "Maricopa Bankruptcy Attorney",
-              "description": "Virtual bankruptcy services in Maricopa, Arizona. Get expert legal guidance for Chapter 7 and Chapter 13 bankruptcy filings from home.",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "4425 E Agave Rd. Suite 110",
-                "addressLocality": "Phoenix",
-                "addressRegion": "AZ",
-                "postalCode": "85044",
-                "addressCountry": "US"
-              },
-              "telephone": "+1-480-886-0339",
-              "url": "https://yourwebsite.com/bankruptcy-attorney-maricopa"
-            })
-          }} 
-        />
-      </Head>
-
       {/* Page Content */}
       <h1 className="text-3xl font-bold mb-4">Bankruptcy Attorney in Maricopa</h1>
       <p className="mb-6 text-lg">
-        If you’re overwhelmed by **credit card debt, medical bills, foreclosure threats, or wage garnishments**, bankruptcy can offer a **legal solution** to get you back on track. Our **virtual bankruptcy law firm** makes it easier than ever for residents of **Maricopa, Arizona** to file for bankruptcy **without visiting a physical office**.
+        If you are facing financial hardship in Maricopa, filing for bankruptcy may offer a way forward. Our experienced bankruptcy attorneys provide **virtual legal services**, allowing you to complete the process from the comfort of your home. Whether you need assistance with **Chapter 7 bankruptcy** to eliminate debt or **Chapter 13 bankruptcy** to create a repayment plan, we provide expert legal guidance.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6">How Bankruptcy Can Help You</h2>
+      <h2 className="text-2xl font-semibold mt-6">Understanding Your Bankruptcy Options</h2>
       <p className="mb-4">
-        Filing for **bankruptcy in Maricopa** can provide relief from overwhelming financial burdens. Our experienced attorneys can help you:
-      </p>
-      <ul className="list-disc ml-6">
-        <li>✅ **Stop creditor harassment and collection calls**</li>
-        <li>✅ **Prevent wage garnishments and bank levies**</li>
-        <li>✅ **Delay or stop foreclosure and repossession proceedings**</li>
-        <li>✅ **Eliminate or restructure debt for a fresh financial start**</li>
-      </ul>
-
-      <h2 className="text-2xl font-semibold mt-6">Chapter 7 vs. Chapter 13 Bankruptcy</h2>
-      <p className="mb-4">
-        When considering bankruptcy, it’s essential to understand the differences between the two main types of filings:
+        Bankruptcy is a legal solution that can help individuals eliminate or restructure their debts. Understanding the difference between **Chapter 7** and **Chapter 13** bankruptcy is crucial when evaluating your financial options.
       </p>
       <ul className="list-disc ml-6">
-        <li><strong>Chapter 7 Bankruptcy:</strong> Designed for individuals with **significant unsecured debt** (like credit cards and medical bills). This option **eliminates** eligible debts in a process that typically lasts **3 to 6 months**.</li>
-        <li><strong>Chapter 13 Bankruptcy:</strong> A repayment plan structured over **3 to 5 years**. Best for individuals with **regular income** who want to keep assets while restructuring debt into an affordable plan.</li>
+        <li><strong>Chapter 7 Bankruptcy</strong> – Eliminates most unsecured debts, such as credit card balances and medical bills, giving you a fresh financial start.</li>
+        <li><strong>Chapter 13 Bankruptcy</strong> – Allows individuals with regular income to develop a structured repayment plan, preventing foreclosure and repossession.</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold mt-6">Do You Qualify for Bankruptcy in Maricopa?</h2>
+      <h2 className="text-2xl font-semibold mt-6">Benefits of Filing for Bankruptcy in Maricopa</h2>
       <p className="mb-4">
-        If you’re considering **Chapter 7 bankruptcy**, you must pass the **Means Test**, which evaluates your **income and expenses** to determine eligibility. If you don’t qualify, **Chapter 13** might still be an option to restructure debt instead.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-6">Why Choose Our Virtual Bankruptcy Services?</h2>
-      <p className="mb-4">
-        Our **virtual bankruptcy firm** allows residents of **Maricopa** to file for bankruptcy **from the comfort of their home**. Here’s what we offer:
+        Bankruptcy provides immediate legal protections and financial relief:
       </p>
       <ul className="list-disc ml-6">
-        <li>✔️ **Free Initial Consultation** – Discuss your case with an experienced attorney.</li>
-        <li>✔️ **Step-by-Step Guidance** – We handle all the paperwork and legal procedures.</li>
-        <li>✔️ **Electronic Filing** – No need to visit a law office in person.</li>
-        <li>✔️ **Affordable Payment Plans** – We make bankruptcy accessible for everyone.</li>
+        <li>Stops creditor harassment and collection calls.</li>
+        <li>Prevents wage garnishments and bank levies.</li>
+        <li>Halts foreclosure proceedings, allowing homeowners to explore repayment options.</li>
+        <li>Discharges eligible unsecured debts, offering financial relief.</li>
+        <li>Gives individuals the opportunity to rebuild their credit over time.</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold mt-6">Take Control of Your Financial Future</h2>
+      <h2 className="text-2xl font-semibold mt-6">Who Qualifies for Bankruptcy?</h2>
       <p className="mb-4">
-        If you’re facing **overwhelming debt**, now is the time to take action. Our experienced bankruptcy attorneys can help you understand your **legal options** and **start fresh financially**.
+        To file for **Chapter 7**, you must pass a **Means Test**, which compares your income to the Arizona state median. **Chapter 13** is available for those with regular income who want to repay debts under court supervision. Our attorneys assess eligibility and guide clients through the process.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-6">How Our Virtual Bankruptcy Services Work</h2>
+      <p className="mb-4">
+        Our law firm offers a streamlined **virtual bankruptcy process**, allowing clients to receive professional legal assistance from the comfort of their homes. The process includes:
+      </p>
+      <ul className="list-disc ml-6">
+        <li>Initial consultation to discuss your financial situation.</li>
+        <li>Preparation and review of bankruptcy documents.</li>
+        <li>Electronic filing of your bankruptcy petition.</li>
+        <li>Legal representation throughout the process.</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mt-6">Schedule a Free Bankruptcy Consultation</h2>
+      <p className="mb-4">
+        If you are considering bankruptcy, speaking with an attorney can help you determine the best course of action. Contact us today for a **free consultation** and take the first step toward financial relief.
       </p>
 
       {/* Lead Capture Form */}
@@ -89,28 +62,14 @@ const MaricopaBankruptcyPage = () => {
       {/* Nearby Cities Section for Internal Linking */}
       <h2 className="text-2xl font-semibold mt-8">Nearby Cities We Serve</h2>
       <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
-  <li><Link href="/bankruptcy-attorney-phoenix">Phoenix</Link></li>
-  <li><Link href="/bankruptcy-attorney-mesa">Mesa</Link></li>
-  <li><Link href="/bankruptcy-attorney-chandler">Chandler</Link></li>
-  <li><Link href="/bankruptcy-attorney-tempe">Tempe</Link></li>
-  <li><Link href="/bankruptcy-attorney-glendale">Glendale</Link></li>
-  <li><Link href="/bankruptcy-attorney-scottsdale">Scottsdale</Link></li>
-  <li><Link href="/bankruptcy-attorney-peoria">Peoria</Link></li>
-  <li><Link href="/bankruptcy-attorney-surprise">Surprise</Link></li>
-  <li><Link href="/bankruptcy-attorney-avondale">Avondale</Link></li>
-  <li><Link href="/bankruptcy-attorney-goodyear">Goodyear</Link></li>
-  <li><Link href="/bankruptcy-attorney-tucson">Tucson</Link></li>
-  <li><Link href="/bankruptcy-attorney-flagstaff">Flagstaff</Link></li>
-  <li><Link href="/bankruptcy-attorney-prescott">Prescott</Link></li>
-  <li><Link href="/bankruptcy-attorney-kingman">Kingman</Link></li>
-  <li><Link href="/bankruptcy-attorney-casa-grande">Casa Grande</Link></li>
-  <li><Link href="/bankruptcy-attorney-sierra-vista">Sierra Vista</Link></li>
-  <li><Link href="/bankruptcy-attorney-apache-junction">Apache Junction</Link></li>
-  <li><Link href="/bankruptcy-attorney-bullhead-city">Bullhead City</Link></li>
-  <li><Link href="/bankruptcy-attorney-lake-havasu-city">Lake Havasu City</Link></li>
-  <li><Link href="/bankruptcy-attorney-maricopa">Maricopa</Link></li>
-  <li><Link href="/bankruptcy-attorney-yuma">Yuma</Link></li>
-</ul>
+        {serviceAreas.map((area) => (
+          <li key={area.slug}>
+            <Link href={`/bankruptcy-attorney-${area.slug}`} className="text-blue-600 hover:underline">
+              Bankruptcy Attorney in {area.name}
+            </Link>
+          </li>
+        ))}
+      </ul>
 
       {/* Back to Homepage */}
       <div className="mt-6">

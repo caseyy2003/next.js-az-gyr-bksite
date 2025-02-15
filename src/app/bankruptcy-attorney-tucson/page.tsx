@@ -1,115 +1,75 @@
-import Head from "next/head";
 import Link from "next/link";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
+import { serviceAreas } from "@/constants/serviceAreas";
+import { generateMetadata } from "@/utils/generateMetadata"; // Import the function
 
-
-export const metadata = {
-  title: "Bankruptcy Attorney in Tucson | Expert Legal Assistance",
-  description: "Looking for a bankruptcy attorney in Tucson, Arizona? Get expert legal assistance for Chapter 7 and Chapter 13 bankruptcy filings.",
-  keywords: "Bankruptcy Attorney Tucson, Tucson Chapter 7 Lawyer, Tucson Chapter 13 Attorney, Debt Relief in Tucson"
-};
+export const metadata = generateMetadata("Tucson"); // Dynamic Metadata
 
 const TucsonBankruptcyPage = () => {
   return (
     <div className="container mx-auto p-6">
-      {/* SEO Metadata */}
-      <Head>
-        <script 
-          type="application/ld+json" 
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LegalService",
-              "name": "Tucson Bankruptcy Attorney",
-              "description": "Experienced virtual bankruptcy services in Tucson, Arizona, assisting individuals with Chapter 7 and Chapter 13 bankruptcy filings.",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "4425 E Agave Rd. Suite 110",
-                "addressLocality": "Phoenix",
-                "addressRegion": "AZ",
-                "postalCode": "85044",
-                "addressCountry": "US"
-              },
-              "telephone": "+1-480-886-0339",
-              "url": "https://yourwebsite.com/bankruptcy-attorney-tucson"
-            })
-          }} 
-        />
-      </Head>
-
+      
       {/* Page Content */}
       <h1 className="text-3xl font-bold mb-4">Bankruptcy Attorney in Tucson</h1>
       <p className="mb-6 text-lg">
-        If you are struggling with overwhelming debt in Tucson, bankruptcy may provide the financial relief you need. Our experienced attorneys offer virtual bankruptcy services, allowing you to file for Chapter 7 or Chapter 13 bankruptcy remotely. We are committed to helping you regain financial stability.
+        If you are struggling with overwhelming debt in Tucson, bankruptcy may offer a fresh financial start. Our **experienced bankruptcy attorneys** provide **virtual legal services**, allowing you to navigate the bankruptcy process with ease. Whether you need **Chapter 7 bankruptcy** to eliminate debt or **Chapter 13 bankruptcy** to reorganize payments, we offer professional guidance every step of the way.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6">How Bankruptcy Can Help</h2>
+      <h2 className="text-2xl font-semibold mt-6">Understanding Your Bankruptcy Options</h2>
       <p className="mb-4">
-        Bankruptcy is a legal solution that allows individuals to eliminate or restructure debt. Benefits include:
+        Bankruptcy is a powerful legal tool that can help you regain control of your finances. The two most common types are:
       </p>
       <ul className="list-disc ml-6">
-        <li>Stopping creditor harassment and collection calls</li>
-        <li>Preventing wage garnishments and bank levies</li>
-        <li>Halting foreclosure and repossession proceedings</li>
-        <li>Providing a structured repayment plan or complete debt discharge</li>
+        <li><strong>Chapter 7 Bankruptcy</strong> – Eliminates most unsecured debts, such as credit card balances and medical bills, giving you a clean slate.</li>
+        <li><strong>Chapter 13 Bankruptcy</strong> – Allows individuals to restructure debts into a manageable repayment plan, helping to avoid foreclosure or repossession.</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold mt-6">Chapter 7 and Chapter 13 Bankruptcy</h2>
+      <h2 className="text-2xl font-semibold mt-6">Benefits of Filing for Bankruptcy in Tucson</h2>
       <p className="mb-4">
-        Understanding the differences between Chapter 7 and Chapter 13 bankruptcy can help determine the best path forward.
+        Bankruptcy provides immediate legal protections and financial benefits:
       </p>
       <ul className="list-disc ml-6">
-        <li><strong>Chapter 7 Bankruptcy</strong> – Eliminates most unsecured debts, including medical bills and credit card balances</li>
-        <li><strong>Chapter 13 Bankruptcy</strong> – A structured repayment plan that allows individuals to manage debt over time while keeping assets</li>
+        <li>Stops creditor harassment and collection calls.</li>
+        <li>Prevents wage garnishments and bank levies.</li>
+        <li>Halts foreclosure proceedings, allowing homeowners time to explore repayment solutions.</li>
+        <li>Eliminates qualifying unsecured debts, offering financial relief.</li>
+        <li>Provides an opportunity to rebuild credit over time.</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold mt-6">Who Qualifies for Bankruptcy in Tucson?</h2>
+      <h2 className="text-2xl font-semibold mt-6">Who Qualifies for Bankruptcy?</h2>
       <p className="mb-4">
-        Bankruptcy eligibility depends on several factors, including income, assets, and debt type. To file for Chapter 7, you must pass a Means Test that evaluates your financial situation. Chapter 13 is available for those with a regular income who want to restructure debt and avoid foreclosure.
+        To qualify for **Chapter 7**, you must pass a **Means Test**, which determines if your income is below the Arizona state median. **Chapter 13** is an option for individuals with regular income who want to reorganize their debts. Our attorneys assess eligibility and guide clients through the process.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6">Our Virtual Bankruptcy Process</h2>
+      <h2 className="text-2xl font-semibold mt-6">How Our Virtual Bankruptcy Services Work</h2>
       <p className="mb-4">
-        We offer a streamlined virtual bankruptcy process, allowing you to complete your filing remotely. The process includes:
+        Our law firm provides a **virtual bankruptcy process**, allowing you to receive expert legal assistance remotely. The process includes:
       </p>
       <ul className="list-disc ml-6">
-        <li>Comprehensive consultation to assess your financial situation</li>
-        <li>Preparation and review of all bankruptcy paperwork</li>
-        <li>Electronic filing of your bankruptcy case</li>
-        <li>Legal representation throughout the process</li>
+        <li>A free consultation to assess your financial situation.</li>
+        <li>Preparation and review of all necessary bankruptcy documents.</li>
+        <li>Electronic filing of your bankruptcy petition.</li>
+        <li>Legal representation throughout the entire process.</li>
       </ul>
 
       <h2 className="text-2xl font-semibold mt-6">Schedule a Free Bankruptcy Consultation</h2>
       <p className="mb-4">
-        If you are considering bankruptcy, speaking with an experienced attorney can help you determine the best course of action. Contact us today for a free consultation and take the first step toward financial relief.
+        If you are considering bankruptcy, speaking with an experienced attorney can help you determine the best course of action. Contact us today for a **free consultation** and take the first step toward financial relief.
       </p>
 
+      {/* Lead Capture Form */}
       <LeadCaptureForm />
 
       {/* Nearby Cities Section for Internal Linking */}
       <h2 className="text-2xl font-semibold mt-8">Nearby Cities We Serve</h2>
       <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
-        <li><Link href="/bankruptcy-attorney-phoenix">Phoenix</Link></li>
-        <li><Link href="/bankruptcy-attorney-mesa">Mesa</Link></li>
-        <li><Link href="/bankruptcy-attorney-chandler">Chandler</Link></li>
-        <li><Link href="/bankruptcy-attorney-tempe">Tempe</Link></li>
-        <li><Link href="/bankruptcy-attorney-glendale">Glendale</Link></li>
-        <li><Link href="/bankruptcy-attorney-scottsdale">Scottsdale</Link></li>
-        <li><Link href="/bankruptcy-attorney-peoria">Peoria</Link></li>
-        <li><Link href="/bankruptcy-attorney-surprise">Surprise</Link></li>
-        <li><Link href="/bankruptcy-attorney-avondale">Avondale</Link></li>
-        <li><Link href="/bankruptcy-attorney-goodyear">Goodyear</Link></li>
-        <li><Link href="/bankruptcy-attorney-tucson">Tucson</Link></li>
-        <li><Link href="/bankruptcy-attorney-flagstaff">Flagstaff</Link></li>
-        <li><Link href="/bankruptcy-attorney-prescott">Prescott</Link></li>
-        <li><Link href="/bankruptcy-attorney-kingman">Kingman</Link></li>
-        <li><Link href="/bankruptcy-attorney-casa-grande">Casa Grande</Link></li>
-        <li><Link href="/bankruptcy-attorney-sierra-vista">Sierra Vista</Link></li>
-        <li><Link href="/bankruptcy-attorney-apache-junction">Apache Junction</Link></li>
-        <li><Link href="/bankruptcy-attorney-bullhead-city">Bullhead City</Link></li>
-        <li><Link href="/bankruptcy-attorney-lake-havasu-city">Lake Havasu City</Link></li>
-        <li><Link href="/bankruptcy-attorney-maricopa">Maricopa</Link></li>
-        <li><Link href="/bankruptcy-attorney-yuma">Yuma</Link></li>
+        {serviceAreas.map((area) => (
+          <li key={area.slug}>
+            <Link href={`/bankruptcy-attorney-${area.slug}`} className="text-blue-600 hover:underline">
+              Bankruptcy Attorney in {area.name}
+            </Link>
+          </li>
+        ))}
       </ul>
 
       {/* Back to Homepage */}

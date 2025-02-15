@@ -1,107 +1,76 @@
-import Head from "next/head";
 import Link from "next/link";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
+import { serviceAreas } from "@/constants/serviceAreas";
+import { generateMetadata } from "@/utils/generateMetadata"; // Import the function
 
-export const metadata = {
-  title: "Bankruptcy Attorney in Sierra Vista | Virtual Debt Relief Services",
-  description: "Struggling with debt in Sierra Vista, Arizona? Our virtual bankruptcy services help you file for Chapter 7 or Chapter 13 remotely.",
-  keywords: "Bankruptcy Attorney Sierra Vista, Chapter 7 Lawyer Sierra Vista, Chapter 13 Attorney Sierra Vista, Virtual Debt Relief"
-};
+export const metadata = generateMetadata("Sierra Vista"); // Dynamic Metadata
 
 const SierraVistaBankruptcyPage = () => {
   return (
     <div className="container mx-auto p-6">
-      {/* SEO Metadata */}
-      <Head>
-        <script 
-          type="application/ld+json" 
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LegalService",
-              "name": "Sierra Vista Bankruptcy Attorney",
-              "description": "Experienced virtual bankruptcy services in Sierra Vista, Arizona, assisting individuals with Chapter 7 and Chapter 13 bankruptcy filings.",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "4425 E Agave Rd. Suite 110",
-                "addressLocality": "Phoenix",
-                "addressRegion": "AZ",
-                "postalCode": "85044",
-                "addressCountry": "US"
-              },
-              "telephone": "+1-480-886-0339",
-              "url": "https://yourwebsite.com/bankruptcy-attorney-sierra-vista"
-            })
-          }} 
-        />
-      </Head>
-
+      
       {/* Page Content */}
       <h1 className="text-3xl font-bold mb-4">Bankruptcy Attorney in Sierra Vista</h1>
       <p className="mb-6 text-lg">
-        If you are struggling with overwhelming debt in Sierra Vista, you are not alone. Bankruptcy laws exist to help people regain control of their finances and get a **fresh start**. Whether you need **Chapter 7 bankruptcy** to eliminate unsecured debts or **Chapter 13 bankruptcy** to create a structured repayment plan, we are here to help.
+        If you’re facing financial difficulties in Sierra Vista, filing for bankruptcy may provide the relief you need. Our experienced bankruptcy attorneys offer **virtual legal services**, making the process convenient and stress-free. Whether you need help with **Chapter 7 bankruptcy** to eliminate debt or **Chapter 13 bankruptcy** to create a repayment plan, we are here to guide you every step of the way.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6">How Bankruptcy Can Help You</h2>
+      <h2 className="text-2xl font-semibold mt-6">Understanding Your Bankruptcy Options</h2>
       <p className="mb-4">
-        Filing for bankruptcy can **stop harassing phone calls, prevent wage garnishments, and halt foreclosure or repossession**. It gives you breathing room and a path forward. Our virtual bankruptcy services allow you to handle everything remotely, ensuring convenience and efficiency.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-6">What Is the Difference Between Chapter 7 and Chapter 13 Bankruptcy?</h2>
-      <ul className="list-disc ml-6">
-        <li><strong>Chapter 7 Bankruptcy:</strong> A liquidation process that eliminates most unsecured debts, such as medical bills and credit cards.</li>
-        <li><strong>Chapter 13 Bankruptcy:</strong> A structured repayment plan for those who have regular income and want to catch up on missed mortgage, car, or tax payments.</li>
-      </ul>
-
-      <h2 className="text-2xl font-semibold mt-6">Who Qualifies for Bankruptcy in Sierra Vista?</h2>
-      <p className="mb-4">
-        To qualify for **Chapter 7**, you must pass the **Means Test**, which assesses your income level. If you do not qualify, **Chapter 13** allows you to reorganize your debts and pay them off over time.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-6">Our Virtual Bankruptcy Process</h2>
-      <p className="mb-4">
-        We make the bankruptcy process seamless by offering **virtual consultations** and **electronic filing**. Here’s how it works:
+        Bankruptcy is a legal solution that can help individuals and families reset their financial situation. Understanding the differences between **Chapter 7** and **Chapter 13** bankruptcy is crucial.
       </p>
       <ul className="list-disc ml-6">
-        <li>✔️ **Free Consultation:** Discuss your financial situation with a licensed attorney.</li>
-        <li>✔️ **Paperwork Assistance:** We help you prepare and submit all necessary documents.</li>
-        <li>✔️ **Electronic Filing:** No need to visit an office—your case is filed remotely.</li>
-        <li>✔️ **Legal Guidance:** We provide continuous support throughout the entire process.</li>
+        <li><strong>Chapter 7 Bankruptcy</strong> – Eliminates most unsecured debts, such as credit card balances and medical bills, providing a fresh start.</li>
+        <li><strong>Chapter 13 Bankruptcy</strong> – Allows individuals with steady income to create a structured repayment plan, helping prevent foreclosure and repossession.</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold mt-6">Take the First Step Toward Debt Relief</h2>
+      <h2 className="text-2xl font-semibold mt-6">Benefits of Filing for Bankruptcy in Sierra Vista</h2>
       <p className="mb-4">
-        Don’t let debt dictate your future. Schedule a **free consultation** to explore your bankruptcy options and take control of your financial situation.
+        Filing for bankruptcy provides immediate legal protections and long-term financial benefits:
+      </p>
+      <ul className="list-disc ml-6">
+        <li>Stops harassing calls from creditors.</li>
+        <li>Prevents wage garnishments and bank levies.</li>
+        <li>Halts foreclosure proceedings, giving homeowners time to explore repayment options.</li>
+        <li>Eliminates eligible unsecured debts, offering a fresh start.</li>
+        <li>Provides an opportunity to rebuild credit over time.</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mt-6">Who Qualifies for Bankruptcy?</h2>
+      <p className="mb-4">
+        Eligibility for **Chapter 7** bankruptcy is determined by a **Means Test**, which compares your income to the Arizona state median. **Chapter 13** bankruptcy is an option for those with regular income who want to restructure their debt under court supervision. Our attorneys evaluate each case carefully to determine the best path forward.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-6">How Our Virtual Bankruptcy Services Work</h2>
+      <p className="mb-4">
+        Our firm offers a streamlined **virtual bankruptcy process**, allowing clients to receive professional legal guidance from the comfort of their homes. The process includes:
+      </p>
+      <ul className="list-disc ml-6">
+        <li>An initial consultation to assess your financial situation.</li>
+        <li>Preparation and review of all necessary bankruptcy documents.</li>
+        <li>Electronic filing of your bankruptcy petition.</li>
+        <li>Comprehensive legal representation throughout the process.</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mt-6">Schedule a Free Bankruptcy Consultation</h2>
+      <p className="mb-4">
+        If you are considering bankruptcy, speaking with an experienced attorney can help you make an informed decision. Contact us today for a **free consultation** and take the first step toward financial relief.
       </p>
 
       {/* Lead Capture Form */}
-     <LeadCaptureForm />
+      <LeadCaptureForm />
 
       {/* Nearby Cities Section for Internal Linking */}
       <h2 className="text-2xl font-semibold mt-8">Nearby Cities We Serve</h2>
       <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
-  <li><Link href="/bankruptcy-attorney-phoenix">Phoenix</Link></li>
-  <li><Link href="/bankruptcy-attorney-mesa">Mesa</Link></li>
-  <li><Link href="/bankruptcy-attorney-chandler">Chandler</Link></li>
-  <li><Link href="/bankruptcy-attorney-tempe">Tempe</Link></li>
-  <li><Link href="/bankruptcy-attorney-glendale">Glendale</Link></li>
-  <li><Link href="/bankruptcy-attorney-scottsdale">Scottsdale</Link></li>
-  <li><Link href="/bankruptcy-attorney-peoria">Peoria</Link></li>
-  <li><Link href="/bankruptcy-attorney-surprise">Surprise</Link></li>
-  <li><Link href="/bankruptcy-attorney-avondale">Avondale</Link></li>
-  <li><Link href="/bankruptcy-attorney-goodyear">Goodyear</Link></li>
-  <li><Link href="/bankruptcy-attorney-tucson">Tucson</Link></li>
-  <li><Link href="/bankruptcy-attorney-flagstaff">Flagstaff</Link></li>
-  <li><Link href="/bankruptcy-attorney-prescott">Prescott</Link></li>
-  <li><Link href="/bankruptcy-attorney-kingman">Kingman</Link></li>
-  <li><Link href="/bankruptcy-attorney-casa-grande">Casa Grande</Link></li>
-  <li><Link href="/bankruptcy-attorney-sierra-vista">Sierra Vista</Link></li>
-  <li><Link href="/bankruptcy-attorney-apache-junction">Apache Junction</Link></li>
-  <li><Link href="/bankruptcy-attorney-bullhead-city">Bullhead City</Link></li>
-  <li><Link href="/bankruptcy-attorney-lake-havasu-city">Lake Havasu City</Link></li>
-  <li><Link href="/bankruptcy-attorney-maricopa">Maricopa</Link></li>
-  <li><Link href="/bankruptcy-attorney-yuma">Yuma</Link></li>
-</ul>
+        {serviceAreas.map((area) => (
+          <li key={area.slug}>
+            <Link href={`/bankruptcy-attorney-${area.slug}`} className="text-blue-600 hover:underline">
+              Bankruptcy Attorney in {area.name}
+            </Link>
+          </li>
+        ))}
+      </ul>
 
       {/* Back to Homepage */}
       <div className="mt-6">
