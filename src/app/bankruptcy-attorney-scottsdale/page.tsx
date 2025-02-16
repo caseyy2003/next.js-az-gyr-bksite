@@ -12,12 +12,12 @@ const ScottsdaleBankruptcyPage = () => {
       {/* Page Content */}
       <h1 className="text-3xl font-bold mb-4">Bankruptcy Attorney in Scottsdale</h1>
       <p className="mb-6 text-lg">
-        If you're facing financial hardship in Scottsdale, filing for bankruptcy may provide the relief you need. Our experienced bankruptcy attorneys offer **virtual legal services**, making it easy to file from the comfort of your home. Whether you need assistance with **Chapter 7 bankruptcy** to eliminate debt or **Chapter 13 bankruptcy** to restructure it, we provide expert legal guidance.
+        If you&apos;re facing financial hardship in Scottsdale, filing for bankruptcy may provide the relief you need. Our experienced bankruptcy attorneys offer <strong>virtual legal services</strong>, making it easy to file from the comfort of your home. Whether you need assistance with <strong>Chapter 7 bankruptcy</strong> to eliminate debt or <strong>Chapter 13 bankruptcy</strong> to restructure it, we provide expert legal guidance.
       </p>
 
       <h2 className="text-2xl font-semibold mt-6">Understanding Your Bankruptcy Options</h2>
       <p className="mb-4">
-        Bankruptcy is a powerful legal tool that can help individuals and families regain control of their finances. Understanding the differences between **Chapter 7** and **Chapter 13** bankruptcy is essential.
+        Bankruptcy is a powerful legal tool that can help individuals and families regain control of their finances. Understanding the differences between <strong>Chapter 7</strong> and <strong>Chapter 13</strong> bankruptcy is essential.
       </p>
       <ul className="list-disc ml-6">
         <li><strong>Chapter 7 Bankruptcy</strong> – Eliminates most unsecured debts, such as credit card balances and medical bills, giving you a fresh financial start.</li>
@@ -38,12 +38,12 @@ const ScottsdaleBankruptcyPage = () => {
 
       <h2 className="text-2xl font-semibold mt-6">Who Qualifies for Bankruptcy?</h2>
       <p className="mb-4">
-        Eligibility for **Chapter 7** bankruptcy is determined by a **Means Test**, which compares your income to the Arizona state median. **Chapter 13** bankruptcy is an option for those with regular income who want to repay debts under court supervision. Our attorneys evaluate each client's situation to determine the best path forward.
+        Eligibility for <strong>Chapter 7</strong> bankruptcy is determined by a <strong>Means Test</strong>, which compares your income to the Arizona state median. <strong>Chapter 13</strong> bankruptcy is an option for those with regular income who want to repay debts under court supervision. Our attorneys evaluate each client&apos;s situation to determine the best path forward.
       </p>
 
       <h2 className="text-2xl font-semibold mt-6">How Our Virtual Bankruptcy Services Work</h2>
       <p className="mb-4">
-        Our law firm provides **virtual bankruptcy services**, ensuring a smooth and efficient filing process. The process includes:
+        Our law firm provides <strong>virtual bankruptcy services</strong>, ensuring a smooth and efficient filing process. The process includes:
       </p>
       <ul className="list-disc ml-6">
         <li>An initial consultation to assess your financial situation.</li>
@@ -54,7 +54,7 @@ const ScottsdaleBankruptcyPage = () => {
 
       <h2 className="text-2xl font-semibold mt-6">Schedule a Free Bankruptcy Consultation</h2>
       <p className="mb-4">
-        If you are considering bankruptcy, speaking with an experienced attorney can help you make an informed decision. Contact us today for a **free consultation** and take the first step toward financial relief.
+        If you are considering bankruptcy, speaking with an experienced attorney can help you make an informed decision. Contact us today for a <strong>free consultation</strong> and take the first step toward financial relief.
       </p>
 
       {/* Lead Capture Form */}
@@ -74,7 +74,7 @@ const ScottsdaleBankruptcyPage = () => {
 
       {/* Back to Homepage */}
       <div className="mt-6">
-        <Link href="/" className="text-blue-500 hover:underline">← Back to Home</Link>
+        <Link href="/" className="text-blue-500 hover:underline">&larr; Back to Home</Link>
       </div>
     </div>
   );

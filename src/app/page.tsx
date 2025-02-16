@@ -1,47 +1,10 @@
 "use client"; // ✅ Ensure this remains at the top
 
 import Link from "next/link";
-import { useState } from "react";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 import { serviceAreas } from "@/constants/serviceAreas";
 
-
-
 const HomePage = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    phone: "",
-    email: "",
-  });
-
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    try {
-      const response = await fetch("/api/lead", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (!response.ok) throw new Error("Failed to submit lead.");
-
-      console.log("Lead submitted successfully:", formData);
-      setSubmitted(true);
-    } catch (error) {
-      console.error("Error submitting lead:", error);
-    }
-  };
-
   return (
     <div className="container mx-auto text-center py-16">
       <h1 className="text-3xl font-bold mb-4">Arizona Bankruptcy Attorney</h1>

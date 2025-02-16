@@ -9,7 +9,7 @@ const ContactPage = () => {
         <title>Contact Us | Arizona Bankruptcy Attorneys</title>
         <meta 
           name="description" 
-          content="Contact our experienced Arizona bankruptcy attorneys for a free consultation. We provide expert Chapter 7 & Chapter 13 legal services remotely, serving all of Arizona."
+          content="Contact our experienced Arizona bankruptcy attorneys for a free consultation. We provide expert Chapter 7 &amp; Chapter 13 legal services remotely, serving all of Arizona."
         />
         <meta 
           name="keywords" 
@@ -23,10 +23,10 @@ const ContactPage = () => {
         We provide expert bankruptcy representation to clients across Arizona. Whether you need guidance on Chapter 7 or Chapter 13 bankruptcy, our team is ready to help.
       </p>
       <p>
-        Reach out today to schedule your **free bankruptcy consultation** and take the first step toward financial freedom.
+        Reach out today to schedule your <strong>free bankruptcy consultation</strong> and take the first step toward financial freedom.
       </p>
 
-      {/* Contact Grid (Fixed Closing `div`) */}
+      {/* Contact Grid */}
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Contact Information */}
         <div className="p-6 border rounded shadow-lg bg-gray-100">
@@ -40,14 +40,14 @@ const ContactPage = () => {
 
         {/* Contact Form */}
         <LeadCaptureForm />
-      </div>  {/* ✅ Added closing `</div>` here */}
+      </div>
 
       {/* Additional Contact Options */}
       <div className="mt-8">
         <h2 className="text-2xl font-semibold mb-2">Serving Clients Across Arizona</h2>
         <p>
-          Our firm serves clients throughout the entire state of Arizona. Whether you're in Phoenix, Tucson, Mesa, or anywhere else, 
-          our **virtual consultations make the process easy and convenient**.
+          Our firm serves clients throughout the entire state of Arizona. Whether you&apos;re in Phoenix, Tucson, Mesa, or anywhere else, 
+          our <strong>virtual consultations make the process easy and convenient</strong>.
         </p>
       </div>
 
@@ -61,7 +61,7 @@ const ContactPage = () => {
           style={{ border: "0" }}
           loading="lazy"
           allowFullScreen
-          src="https://www.google.com/maps/embed/v1/place?q=4425+E+Agave+Rd,+Suite+110,+Phoenix,+AZ+85044&key=YOUR_GOOGLE_MAPS_API_KEY"
+          src="https://www.google.com/maps/embed/v1/place?q=4425+E+Agave+Rd,+Suite+110,+Phoenix,+AZ+85044&amp;key=YOUR_GOOGLE_MAPS_API_KEY"
         ></iframe>
       </div>
     </div>

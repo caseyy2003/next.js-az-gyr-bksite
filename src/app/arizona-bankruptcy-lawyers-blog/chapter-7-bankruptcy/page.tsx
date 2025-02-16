@@ -1,20 +1,8 @@
 import Link from "next/link";
 import Head from "next/head";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
-import Image from 'next/image';
-
-const serviceAreas = [
-  { name: "Phoenix", slug: "phoenix" },
-  { name: "Mesa", slug: "mesa" },
-  { name: "Chandler", slug: "chandler" },
-  { name: "Glendale", slug: "glendale" },
-  { name: "Tempe", slug: "tempe" },
-  { name: "Peoria", slug: "peoria" },
-  { name: "Scottsdale", slug: "scottsdale" },
-  { name: "Surprise", slug: "surprise" },
-  { name: "Avondale", slug: "avondale" },
-  { name: "Goodyear", slug: "goodyear" }
-];
+import Image from "next/image";
+import { serviceAreas } from "@/constants/serviceAreas"; // ✅ Import serviceAreas
 
 const Chapter7BankruptcyPage = () => {
   return (
@@ -46,18 +34,18 @@ const Chapter7BankruptcyPage = () => {
       <h2 className="text-2xl font-semibold mt-6">What Is Chapter 7 Bankruptcy?</h2>
       <p>
         Chapter 7 bankruptcy is a legal process designed to provide individuals and families with a **fresh financial start** by 
-        eliminating most unsecured debts. If you're facing overwhelming bills, wage garnishment, or creditor harassment, Chapter 7 
+        eliminating most unsecured debts. If you&apos;re facing overwhelming bills, wage garnishment, or creditor harassment, Chapter 7 
         may be a solution to help you regain control.
       </p>
       <p>
         Unlike **Chapter 13 bankruptcy**, which requires a repayment plan, Chapter 7 **eliminates qualifying debts** entirely. 
-        This is why it’s commonly referred to as **"liquidation bankruptcy."** However, most filers can keep their essential 
+        This is why it&apos;s commonly referred to as **&quot;liquidation bankruptcy.&quot;** However, most filers can keep their essential 
         property under bankruptcy exemptions.
       </p>
 
       <h2 className="text-2xl font-semibold mt-6">Who Qualifies for Chapter 7 Bankruptcy?</h2>
       <p>
-        Not everyone is eligible for Chapter 7 bankruptcy. To qualify, you must pass the **"Means Test"**, which determines 
+        Not everyone is eligible for Chapter 7 bankruptcy. To qualify, you must pass the **&quot;Means Test,&quot;** which determines 
         whether your income is **low enough** to file under Chapter 7.
       </p>
       <ul className="list-disc ml-6 mt-2">
@@ -68,9 +56,7 @@ const Chapter7BankruptcyPage = () => {
       </ul>
 
       <h2 className="text-2xl font-semibold mt-6">What Debts Can Be Discharged?</h2>
-      <p>
-        Chapter 7 bankruptcy eliminates **most** unsecured debts, but not all. Below is a breakdown:
-      </p>
+      <p>Chapter 7 bankruptcy eliminates **most** unsecured debts, but not all.</p>
       <div className="grid grid-cols-2 gap-4 mt-4">
         <div className="p-4 bg-green-100 border rounded">
           <h3 className="font-semibold">✅ Dischargeable Debts</h3>
@@ -127,15 +113,26 @@ const Chapter7BankruptcyPage = () => {
       </div>
 
       <h2 className="text-2xl font-semibold mt-6">Get a Free Bankruptcy Consultation</h2>
-      <p>If you're considering Chapter 7, speaking with an **experienced bankruptcy attorney** can help you make the right decision.</p>
+      <p>If you&apos;re considering Chapter 7, speaking with an **experienced bankruptcy attorney** can help you make the right decision.</p>
 
       {/* Lead Capture Form */}
       <LeadCaptureForm />
 
+      {/* Nearby Cities Section */}
+      <h2 className="text-2xl font-semibold mt-8">Nearby Cities We Serve</h2>
+      <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
+        {serviceAreas.map((area) => (
+          <li key={area.slug}>
+            <Link href={`/bankruptcy-attorney-${area.slug}`} className="text-blue-600 hover:underline">
+              Bankruptcy Attorney in {area.name}
+            </Link>
+          </li>
+        ))}
+      </ul>
+
       {/* Back to Blog */}
       <div className="mt-6">
-      <Link href="/arizona-bankruptcy-lawyers-blog" className="text-blue-500 hover:underline">← Back to Blog</Link>
-
+        <Link href="/arizona-bankruptcy-lawyers-blog" className="text-blue-500 hover:underline">← Back to Blog</Link>
       </div>
     </div>
   );
