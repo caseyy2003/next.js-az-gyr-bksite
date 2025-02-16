@@ -17,21 +17,23 @@ const BullheadCityBankruptcyPage = () => {
 
       <h2 className="text-2xl font-semibold mt-6">Understanding Your Bankruptcy Options</h2>
       <p className="mb-4">
-        Bankruptcy is a legal solution that can help individuals eliminate or restructure debt. Understanding the difference between **Chapter 7** and **Chapter 13** bankruptcy can help you make an informed decision.
+        Bankruptcy is a legal solution that can help individuals eliminate or restructure debt. Understanding the difference between 
+        <strong> Chapter 7 </strong> and <strong> Chapter 13 </strong> bankruptcy can help you make an informed decision.
       </p>
       <ul className="list-disc ml-6">
-        <li><strong>Chapter 7 Bankruptcy</strong> – A process that eliminates most unsecured debts, such as credit card balances and medical bills, giving you a financial reset.</li>
+        <li><strong>Chapter 7 Bankruptcy</strong> – Eliminates most unsecured debts, such as credit card balances and medical bills, giving you a financial reset.</li>
         <li><strong>Chapter 13 Bankruptcy</strong> – Allows individuals with regular income to develop a structured repayment plan, preventing foreclosure and repossession.</li>
       </ul>
 
       <h2 className="text-2xl font-semibold mt-6">Who Qualifies for Bankruptcy in Bullhead City?</h2>
       <p className="mb-4">
-        To file for **Chapter 7**, you must pass a **Means Test**, which compares your income to the Arizona state median. **Chapter 13** is available for those with regular income who want to repay debts under court supervision. Our attorneys assess eligibility and guide clients through the process.
+        To file for <strong>Chapter 7</strong>, you must pass a <strong>Means Test</strong>, which compares your income to the Arizona state median.
+        <strong> Chapter 13 </strong> is available for those with regular income who want to repay debts under court supervision. Our attorneys assess eligibility and guide clients through the process.
       </p>
 
       <h2 className="text-2xl font-semibold mt-6">How Our Virtual Bankruptcy Services Work</h2>
       <p className="mb-4">
-        Our law firm offers a streamlined **virtual bankruptcy process**, allowing clients to receive professional legal assistance from the comfort of their homes. The process includes:
+        Our law firm offers a streamlined <strong> virtual bankruptcy process</strong>, allowing clients to receive professional legal assistance from the comfort of their homes. The process includes:
       </p>
       <ul className="list-disc ml-6">
         <li>Initial consultation to discuss your financial situation.</li>
@@ -42,7 +44,8 @@ const BullheadCityBankruptcyPage = () => {
 
       <h2 className="text-2xl font-semibold mt-6">Schedule a Free Bankruptcy Consultation</h2>
       <p className="mb-4">
-        If you are considering bankruptcy, speaking with an attorney can help you determine the best course of action. Contact us today for a **free consultation** and take the first step toward financial relief.
+        If you are considering bankruptcy, speaking with an attorney can help you determine the best course of action.
+        Contact us today for a <strong>free consultation</strong> and take the first step toward financial relief.
       </p>
 
       {/* Lead Capture Form */}

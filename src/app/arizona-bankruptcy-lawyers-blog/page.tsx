@@ -1,19 +1,25 @@
 import Link from "next/link";
-import Head from "next/head";
 import { serviceAreas } from "@/constants/serviceAreas";
+
+export const metadata = {
+  title: "Bankruptcy Blog | Expert Legal Advice",
+  description:
+    "Explore expert bankruptcy articles on Chapter 7, Chapter 13, debt relief, and financial recovery strategies.",
+  keywords:
+    "Bankruptcy Blog, Chapter 7 Bankruptcy, Chapter 13 Bankruptcy, Debt Relief, Credit Score Bankruptcy, Bankruptcy Case Studies",
+  openGraph: {
+    title: "Bankruptcy Blog | Expert Legal Advice",
+    description:
+      "Explore expert bankruptcy articles on Chapter 7, Chapter 13, debt relief, and financial recovery strategies.",
+    url: "https://yourwebsite.com/arizona-bankruptcy-lawyers-blog",
+    type: "website",
+  },
+};
 
 const BlogPage = () => {
   return (
     <div className="container mx-auto p-6">
-      {/* SEO Metadata */}
-      <Head>
-        <title>Bankruptcy Blog | Expert Legal Advice</title>
-        <meta 
-          name="description" 
-          content="Explore expert bankruptcy articles on Chapter 7, Chapter 13, debt relief, and financial recovery strategies."
-        />
-      </Head>
-
+      {/* Page Content */}
       <h1 className="text-3xl font-bold mb-4">Bankruptcy Blog</h1>
       <p className="mb-6">Get expert insights on bankruptcy laws, debt relief, and financial recovery.</p>
 

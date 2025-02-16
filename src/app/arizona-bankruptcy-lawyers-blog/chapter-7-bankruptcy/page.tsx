@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Head from "next/head";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
+import Image from 'next/image';
+
 const serviceAreas = [
   { name: "Phoenix", slug: "phoenix" },
   { name: "Mesa", slug: "mesa" },
@@ -34,9 +36,10 @@ const Chapter7BankruptcyPage = () => {
       <h1 className="text-3xl font-bold mb-4">Chapter 7 Bankruptcy: A Fresh Start for Debt Relief</h1>
       <p className="text-gray-600 text-sm">Published on February 12, 2025 by <strong>Casey Yontz</strong>, Bankruptcy Attorney</p>
 
-      <img 
+      <Image
         src="/images/chapter-7-bankruptcy.jpg" 
         alt="Chapter 7 Bankruptcy Process"
+        width={800} height={400}
         className="w-full my-6 rounded shadow-lg"
       />
 

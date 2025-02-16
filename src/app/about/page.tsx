@@ -1,34 +1,32 @@
-import Head from "next/head";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 import { serviceAreas } from "@/constants/serviceAreas";
 import Link from "next/link";
 
+export const metadata = {
+  title: "About Our Bankruptcy Attorneys | Top Arizona Bankruptcy Lawyers",
+  description:
+    "Meet the top bankruptcy attorneys in Arizona—Casey Yontz, Glenn Roethler, and Scott Greeves. Over 50 years of combined bankruptcy experience, now offering virtual services statewide.",
+  keywords:
+    "Arizona Bankruptcy Lawyers, Best Bankruptcy Attorneys in Arizona, Virtual Bankruptcy Law Firm, Chapter 7 Bankruptcy, Chapter 13 Bankruptcy, Debt Relief Experts",
+};
+
 const AboutPage = () => {
   return (
     <div className="container mx-auto p-6">
-      {/* SEO Metadata */}
-      <Head>
-        <title>About Our Bankruptcy Attorneys | Top Arizona Bankruptcy Lawyers</title>
-        <meta 
-          name="description" 
-          content="Meet the top bankruptcy attorneys in Arizona—Casey Yontz, Glenn Roethler, and Scott Greeves. Over 50 years of combined bankruptcy experience, now offering virtual services statewide."
-        />
-        <meta 
-          name="keywords" 
-          content="Arizona Bankruptcy Lawyers, Best Bankruptcy Attorneys in Arizona, Virtual Bankruptcy Law Firm, Chapter 7 Bankruptcy, Chapter 13 Bankruptcy, Debt Relief Experts"
-        />
-      </Head>
-
       {/* Page Content */}
       <h1 className="text-3xl font-bold mb-4">About Our Firm</h1>
       <p>
-        When facing bankruptcy, experience matters. With over 50 years of combined bankruptcy experience, our attorneys—Casey Yontz, Glenn Roethler, and Scott Greeves—have successfully helped thousands of Arizona residents achieve financial freedom.
+        When facing bankruptcy, experience matters. With over 50 years of combined bankruptcy experience, our attorneys—Casey
+        Yontz, Glenn Roethler, and Scott Greeves—have successfully helped thousands of Arizona residents achieve financial freedom.
       </p>
       <p>
-        Bankruptcy is complex, but it doesn’t have to be difficult. Our firm was founded to provide high-quality legal representation statewide—without the hassle of multiple in-person visits.
+        Bankruptcy is complex, but it doesn’t have to be difficult. Our firm was founded to provide high-quality legal
+        representation statewide—without the hassle of multiple in-person visits.
       </p>
       <p>
-        Many top-tier bankruptcy attorneys require in-person consultations and multiple office visits. With our fully remote service model, you receive the same elite legal representation without leaving your home. We handle everything electronically and virtually, allowing you to focus on your financial recovery.
+        Many top-tier bankruptcy attorneys require in-person consultations and multiple office visits. With our fully remote service
+        model, you receive the same elite legal representation without leaving your home. We handle everything electronically and
+        virtually, allowing you to focus on your financial recovery.
       </p>
 
       <h2 className="text-2xl font-semibold mt-6">Meet Our Attorneys</h2>
@@ -41,9 +39,6 @@ const AboutPage = () => {
         <li>Massachusetts Institute of Technology, Postgrad Certificates, Computer Science, Machine Learning</li>
         <li>Western State College of Law, JD</li>
       </ul>
-      <p>
-        Casey Yontz has over 17 years of experience handling hundreds, if not thousands, of bankruptcy cases in Arizona. His career has been dedicated to helping individuals navigate Chapter 7 and Chapter 13 bankruptcy with expert guidance.
-      </p>
 
       <h3 className="text-xl font-bold mt-4">Glenn Roethler</h3>
       <p>Experience: 17+ years of bankruptcy law, extensive casework in Arizona courts</p>
@@ -52,9 +47,6 @@ const AboutPage = () => {
         <li>BA, University of Washington</li>
         <li>JD, Arizona State University</li>
       </ul>
-      <p>
-        Glenn Roethler is one of Arizona’s most experienced bankruptcy attorneys, with a proven track record in handling complex bankruptcy cases.
-      </p>
 
       <h3 className="text-xl font-bold mt-4">Scott Greeves</h3>
       <p>Experience: 20+ years of bankruptcy law, former attorney at the Arizona Department of Revenue</p>
@@ -63,9 +55,6 @@ const AboutPage = () => {
         <li>BA, Iowa State University</li>
         <li>JD, University of Iowa</li>
       </ul>
-      <p>
-        With over 20 years of bankruptcy experience, Scott Greeves has been a powerful advocate for individuals and businesses in financial distress.
-      </p>
 
       <h2 className="text-2xl font-semibold mt-6">Why Choose Our Firm?</h2>
       <ul className="list-disc ml-6 mt-2">
@@ -78,7 +67,8 @@ const AboutPage = () => {
 
       <h2 className="text-2xl font-semibold mt-6">Get Expert Bankruptcy Help Today</h2>
       <p>
-        If you’re struggling with debt, our experienced attorneys can help. Contact us today for a free consultation and take the first step toward financial relief.
+        If you’re struggling with debt, our experienced attorneys can help. Contact us today for a free consultation and take the
+        first step toward financial relief.
       </p>
 
       {/* Lead Capture Form */}

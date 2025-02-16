@@ -24,7 +24,7 @@ export const generateMetadata = (city: string) => {
             "addressCountry": "US"
           },
           "telephone": "+1-480-886-0339",
-          "url": `https://yourwebsite.com/bankruptcy-attorney-${city.toLowerCase()}`
+          "url": `https://arizonabankruptcyadvocates.com`
         })
       }
     };
