@@ -8,6 +8,7 @@ export const metadata = generateMetadata("Kingman"); // Dynamic Metadata
 const KingmanBankruptcyPage = () => {
   return (
     <div className="container mx-auto p-6">
+      
       {/* Page Content */}
       <h1 className="text-3xl font-bold mb-4">Bankruptcy Attorney in Kingman</h1>
       <p className="mb-6 text-lg">
@@ -50,6 +51,35 @@ const KingmanBankruptcyPage = () => {
         <li>Electronic filing of your bankruptcy petition.</li>
         <li>Legal representation throughout the process.</li>
       </ul>
+
+      <h2 className="text-2xl font-semibold mt-6">Frequently Asked Questions</h2>
+
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">Can bankruptcy stop a foreclosure on my home?</summary>
+        <p className="mt-2">
+          Yes. **Filing for bankruptcy** triggers an **automatic stay**, which stops foreclosure proceedings. Chapter 13 allows you to **catch up on missed mortgage payments** through a structured repayment plan.
+        </p>
+      </details>
+
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">Will I lose my car if I file for bankruptcy?</summary>
+        <p className="mt-2">
+          It depends. **Chapter 7 may require liquidation**, but **Arizona exemptions** may allow you to keep your car. **Chapter 13 helps you keep your car** by restructuring your loan payments.
+        </p>
+      </details>
+
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">Can I discharge tax debt in bankruptcy?</summary>
+        <p className="mt-2">
+          Some **older income tax debts** may be discharged in bankruptcy if they meet **specific IRS requirements**. Recent tax debts usually cannot be eliminated.
+        </p>
+      </details>
+
+      <p className="mt-4">
+        <Link href="/faq" className="text-blue-600 hover:underline">
+          Read more frequently asked questions →
+        </Link>
+      </p>
 
       <h2 className="text-2xl font-semibold mt-6">Schedule a Free Bankruptcy Consultation</h2>
       <p className="mb-4">

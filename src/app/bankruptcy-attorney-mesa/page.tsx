@@ -52,6 +52,35 @@ const MesaBankruptcyPage = () => {
         <li>Legal representation throughout the process.</li>
       </ul>
 
+      <h2 className="text-2xl font-semibold mt-6">Frequently Asked Questions</h2>
+
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">How long does the bankruptcy process take?</summary>
+        <p className="mt-2">
+          **Chapter 7 bankruptcy** typically takes **3-6 months** to complete, while **Chapter 13 bankruptcy** involves a repayment plan lasting **3-5 years**.
+        </p>
+      </details>
+
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">Can I keep my house and car if I file for bankruptcy?</summary>
+        <p className="mt-2">
+          Many people can keep their home and vehicle through **Arizona’s bankruptcy exemptions** or by filing for **Chapter 13 bankruptcy**, which allows structured repayment.
+        </p>
+      </details>
+
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">Will bankruptcy stop wage garnishment?</summary>
+        <p className="mt-2">
+          Yes. Once you file for bankruptcy, the **automatic stay** goes into effect, stopping most wage garnishments immediately.
+        </p>
+      </details>
+
+      <p className="mt-4">
+        <Link href="/faq" className="text-blue-600 hover:underline">
+          Read more frequently asked questions →
+        </Link>
+      </p>
+
       <h2 className="text-2xl font-semibold mt-6">Schedule a Free Bankruptcy Consultation</h2>
       <p className="mb-4">
         If you are considering bankruptcy, speaking with an attorney can help you determine the best course of action. Contact us today for a **free consultation** and take the first step toward financial relief.

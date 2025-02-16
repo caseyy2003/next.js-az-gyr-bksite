@@ -12,49 +12,45 @@ const TucsonBankruptcyPage = () => {
       {/* Page Content */}
       <h1 className="text-3xl font-bold mb-4">Bankruptcy Attorney in Tucson</h1>
       <p className="mb-6 text-lg">
-        If you are struggling with overwhelming debt in Tucson, bankruptcy may offer a fresh financial start. Our **experienced bankruptcy attorneys** provide **virtual legal services**, allowing you to navigate the bankruptcy process with ease. Whether you need **Chapter 7 bankruptcy** to eliminate debt or **Chapter 13 bankruptcy** to reorganize payments, we offer professional guidance every step of the way.
+        If you&rsquo;re struggling with debt in Tucson, bankruptcy may provide the financial relief you need. Our experienced attorneys offer **virtual bankruptcy services**, allowing you to complete the process remotely.
       </p>
 
       <h2 className="text-2xl font-semibold mt-6">Understanding Your Bankruptcy Options</h2>
       <p className="mb-4">
-        Bankruptcy is a powerful legal tool that can help you regain control of your finances. The two most common types are:
+        Bankruptcy is a legal solution that can help individuals eliminate or restructure debt. Knowing the difference between **Chapter 7** and **Chapter 13** bankruptcy can help you make an informed decision.
       </p>
       <ul className="list-disc ml-6">
-        <li><strong>Chapter 7 Bankruptcy</strong> – Eliminates most unsecured debts, such as credit card balances and medical bills, giving you a clean slate.</li>
-        <li><strong>Chapter 13 Bankruptcy</strong> – Allows individuals to restructure debts into a manageable repayment plan, helping to avoid foreclosure or repossession.</li>
+        <li><strong>Chapter 7 Bankruptcy</strong> – Eliminates most unsecured debts, such as credit card balances and medical bills, giving you a fresh financial start.</li>
+        <li><strong>Chapter 13 Bankruptcy</strong> – Allows individuals with regular income to develop a structured repayment plan, preventing foreclosure and repossession.</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold mt-6">Benefits of Filing for Bankruptcy in Tucson</h2>
-      <p className="mb-4">
-        Bankruptcy provides immediate legal protections and financial benefits:
-      </p>
-      <ul className="list-disc ml-6">
-        <li>Stops creditor harassment and collection calls.</li>
-        <li>Prevents wage garnishments and bank levies.</li>
-        <li>Halts foreclosure proceedings, allowing homeowners time to explore repayment solutions.</li>
-        <li>Eliminates qualifying unsecured debts, offering financial relief.</li>
-        <li>Provides an opportunity to rebuild credit over time.</li>
-      </ul>
+      <h2 className="text-2xl font-semibold mt-6">Frequently Asked Questions</h2>
 
-      <h2 className="text-2xl font-semibold mt-6">Who Qualifies for Bankruptcy?</h2>
-      <p className="mb-4">
-        To qualify for **Chapter 7**, you must pass a **Means Test**, which determines if your income is below the Arizona state median. **Chapter 13** is an option for individuals with regular income who want to reorganize their debts. Our attorneys assess eligibility and guide clients through the process.
-      </p>
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">Will bankruptcy erase all my debts?</summary>
+        <p className="mt-2">
+          Bankruptcy eliminates many unsecured debts, but certain debts like student loans, child support, and most taxes are not dischargeable.
+        </p>
+      </details>
 
-      <h2 className="text-2xl font-semibold mt-6">How Our Virtual Bankruptcy Services Work</h2>
-      <p className="mb-4">
-        Our law firm provides a **virtual bankruptcy process**, allowing you to receive expert legal assistance remotely. The process includes:
-      </p>
-      <ul className="list-disc ml-6">
-        <li>A free consultation to assess your financial situation.</li>
-        <li>Preparation and review of all necessary bankruptcy documents.</li>
-        <li>Electronic filing of your bankruptcy petition.</li>
-        <li>Legal representation throughout the entire process.</li>
-      </ul>
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">Can I keep my car if I file for bankruptcy?</summary>
+        <p className="mt-2">
+          In most cases, you can keep your car if you continue making payments or use exemptions to protect its value.
+        </p>
+      </details>
 
-      <h2 className="text-2xl font-semibold mt-6">Schedule a Free Bankruptcy Consultation</h2>
-      <p className="mb-4">
-        If you are considering bankruptcy, speaking with an experienced attorney can help you determine the best course of action. Contact us today for a **free consultation** and take the first step toward financial relief.
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">What happens to my credit after bankruptcy?</summary>
+        <p className="mt-2">
+          Your credit will be impacted, but many people see their credit scores improve within a year as they rebuild financially.
+        </p>
+      </details>
+
+      <p className="mt-4">
+        <Link href="/faq" className="text-blue-600 hover:underline">
+          Read more frequently asked questions →
+        </Link>
       </p>
 
       {/* Lead Capture Form */}

@@ -12,49 +12,78 @@ const TempeBankruptcyPage = () => {
       {/* Page Content */}
       <h1 className="text-3xl font-bold mb-4">Bankruptcy Attorney in Tempe</h1>
       <p className="mb-6 text-lg">
-        If you are facing financial challenges in Tempe, bankruptcy could provide a pathway to a fresh start. Our experienced bankruptcy attorneys offer **virtual legal services**, allowing you to navigate the bankruptcy process efficiently from the comfort of your home. Whether you need assistance with **Chapter 7 bankruptcy** to eliminate debt or **Chapter 13 bankruptcy** to reorganize payments, we provide expert legal guidance.
+        If you are struggling with overwhelming debt in Tempe, bankruptcy may provide a fresh financial start. Our experienced bankruptcy attorneys offer **virtual legal services**, allowing you to complete the process remotely with expert guidance. Whether you need assistance with **Chapter 7 bankruptcy** to eliminate debt or **Chapter 13 bankruptcy** to restructure it, we are here to help.
       </p>
 
       <h2 className="text-2xl font-semibold mt-6">Understanding Your Bankruptcy Options</h2>
       <p className="mb-4">
-        Bankruptcy is a powerful legal tool that can help you regain control over your finances. Knowing the differences between **Chapter 7** and **Chapter 13** bankruptcy is essential when deciding on the right option for your situation.
+        Bankruptcy can help individuals eliminate or restructure their debts. Understanding the difference between **Chapter 7** and **Chapter 13** bankruptcy is crucial when evaluating your financial options.
       </p>
       <ul className="list-disc ml-6">
-        <li><strong>Chapter 7 Bankruptcy</strong> – Eliminates most unsecured debts, such as credit card balances and medical bills, offering financial relief.</li>
-        <li><strong>Chapter 13 Bankruptcy</strong> – Allows individuals to restructure their debts into a manageable repayment plan, helping avoid foreclosure and repossession.</li>
+        <li><strong>Chapter 7 Bankruptcy</strong> – Eliminates most unsecured debts, such as credit card balances and medical bills, giving you a financial reset.</li>
+        <li><strong>Chapter 13 Bankruptcy</strong> – Allows individuals with regular income to develop a structured repayment plan, preventing foreclosure and repossession.</li>
       </ul>
 
       <h2 className="text-2xl font-semibold mt-6">Benefits of Filing for Bankruptcy in Tempe</h2>
       <p className="mb-4">
-        Bankruptcy provides immediate legal protection and financial benefits:
+        Bankruptcy provides immediate legal protections and financial relief:
       </p>
       <ul className="list-disc ml-6">
         <li>Stops creditor harassment and collection calls.</li>
         <li>Prevents wage garnishments and bank levies.</li>
-        <li>Halts foreclosure proceedings, allowing homeowners to explore repayment solutions.</li>
-        <li>Eliminates qualifying unsecured debts, offering financial relief.</li>
-        <li>Provides an opportunity to rebuild credit over time.</li>
+        <li>Halts foreclosure proceedings, allowing homeowners to explore repayment options.</li>
+        <li>Discharges eligible unsecured debts, offering financial relief.</li>
+        <li>Gives individuals the opportunity to rebuild their credit over time.</li>
       </ul>
 
       <h2 className="text-2xl font-semibold mt-6">Who Qualifies for Bankruptcy?</h2>
       <p className="mb-4">
-        To qualify for **Chapter 7**, you must pass a **Means Test**, which determines if your income is below the Arizona state median. **Chapter 13** is an option for those with a regular income who want to reorganize their debts. Our attorneys assess your eligibility and guide you through the process.
+        To file for **Chapter 7**, you must pass a **Means Test**, which compares your income to the Arizona state median. **Chapter 13** is available for those with regular income who want to repay debts under court supervision. Our attorneys assess eligibility and guide clients through the process.
       </p>
 
       <h2 className="text-2xl font-semibold mt-6">How Our Virtual Bankruptcy Services Work</h2>
       <p className="mb-4">
-        Our law firm provides a **virtual bankruptcy process**, enabling you to receive expert legal assistance remotely. The process includes:
+        Our law firm offers a streamlined **virtual bankruptcy process**, allowing clients to receive professional legal assistance from the comfort of their homes. The process includes:
       </p>
       <ul className="list-disc ml-6">
-        <li>A free consultation to assess your financial situation.</li>
-        <li>Preparation and review of all necessary bankruptcy documents.</li>
+        <li>Initial consultation to discuss your financial situation.</li>
+        <li>Preparation and review of bankruptcy documents.</li>
         <li>Electronic filing of your bankruptcy petition.</li>
-        <li>Legal representation throughout the entire process.</li>
+        <li>Legal representation throughout the process.</li>
       </ul>
+
+      <h2 className="text-2xl font-semibold mt-6">Frequently Asked Questions</h2>
+
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">How does bankruptcy affect my credit score?</summary>
+        <p className="mt-2">
+          Bankruptcy will impact your **credit score initially**, but many people see an improvement over time as they rebuild credit. **Chapter 7 stays on your report for 10 years**, while **Chapter 13 stays for 7 years**.
+        </p>
+      </details>
+
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">Can I keep my house if I file for bankruptcy?</summary>
+        <p className="mt-2">
+          Yes. **Chapter 13 bankruptcy** helps homeowners avoid foreclosure by setting up a repayment plan. **Chapter 7 bankruptcy** may allow you to keep your home if you are current on payments and your equity is within Arizona’s exemption limits.
+        </p>
+      </details>
+
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">What debts cannot be discharged in bankruptcy?</summary>
+        <p className="mt-2">
+          Certain debts like **student loans, child support, alimony, and most tax debts** cannot be discharged in bankruptcy. However, some older tax debts may be eligible for discharge.
+        </p>
+      </details>
+
+      <p className="mt-4">
+        <Link href="/faq" className="text-blue-600 hover:underline">
+          Read more frequently asked questions →
+        </Link>
+      </p>
 
       <h2 className="text-2xl font-semibold mt-6">Schedule a Free Bankruptcy Consultation</h2>
       <p className="mb-4">
-        If you are considering bankruptcy, speaking with an experienced attorney can help you determine the best course of action. Contact us today for a **free consultation** and take the first step toward financial relief.
+        If you are considering bankruptcy, speaking with an attorney can help you determine the best course of action. Contact us today for a **free consultation** and take the first step toward financial relief.
       </p>
 
       {/* Lead Capture Form */}

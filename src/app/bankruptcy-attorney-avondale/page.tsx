@@ -66,6 +66,11 @@ const AvondaleBankruptcyPage = () => {
         <p className="mt-2">Yes. Once you file for bankruptcy, an **automatic stay** is issued by the court, stopping creditor harassment, wage garnishments, and collection calls.</p>
       </details>
 
+      {/* Read More FAQs Link */}
+      <p className="mt-4">
+        Have more questions? <Link href="/faq" className="text-blue-600 hover:underline">Read more FAQs</Link>.
+      </p>
+
       {/* Nearby Cities Section for Internal Linking */}
       <h2 className="text-2xl font-semibold mt-8">Nearby Cities We Serve</h2>
       <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">

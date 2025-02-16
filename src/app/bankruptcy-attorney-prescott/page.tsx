@@ -12,7 +12,7 @@ const PrescottBankruptcyPage = () => {
       {/* Page Content */}
       <h1 className="text-3xl font-bold mb-4">Bankruptcy Attorney in Prescott</h1>
       <p className="mb-6 text-lg">
-        Struggling with overwhelming debt in Prescott? Filing for bankruptcy may provide a financial reset. Our experienced bankruptcy attorneys offer **virtual legal services**, allowing you to complete the process remotely. Whether you need help with **Chapter 7 bankruptcy** to eliminate debt or **Chapter 13 bankruptcy** to restructure it, we provide expert legal guidance.
+        Facing financial hardship in Prescott? Filing for bankruptcy may offer a fresh start. Our experienced bankruptcy attorneys provide **virtual legal services**, allowing you to complete the process remotely. Whether you need assistance with **Chapter 7 bankruptcy** to eliminate debt or **Chapter 13 bankruptcy** to restructure it, we offer expert legal guidance.
       </p>
 
       <h2 className="text-2xl font-semibold mt-6">Understanding Your Bankruptcy Options</h2>
@@ -51,6 +51,35 @@ const PrescottBankruptcyPage = () => {
         <li>Electronic filing of your bankruptcy petition.</li>
         <li>Legal representation throughout the process.</li>
       </ul>
+
+      <h2 className="text-2xl font-semibold mt-6">Frequently Asked Questions</h2>
+
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">How long does a bankruptcy stay on my credit report?</summary>
+        <p className="mt-2">
+          A **Chapter 7 bankruptcy** remains on your credit report for **10 years**, while **Chapter 13 bankruptcy** stays for **7 years**. However, you can start rebuilding your credit immediately.
+        </p>
+      </details>
+
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">Can I file for bankruptcy more than once?</summary>
+        <p className="mt-2">
+          Yes, but there are waiting periods. If you received a **Chapter 7 discharge**, you must wait **8 years** before filing Chapter 7 again or **4 years** before filing Chapter 13.
+        </p>
+      </details>
+
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">Will bankruptcy stop a wage garnishment?</summary>
+        <p className="mt-2">
+          Yes. The **automatic stay** issued by the bankruptcy court stops wage garnishments, except for certain obligations like child support.
+        </p>
+      </details>
+
+      <p className="mt-4">
+        <Link href="/faq" className="text-blue-600 hover:underline">
+          Read more frequently asked questions →
+        </Link>
+      </p>
 
       <h2 className="text-2xl font-semibold mt-6">Schedule a Free Bankruptcy Consultation</h2>
       <p className="mb-4">

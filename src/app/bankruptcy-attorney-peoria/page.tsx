@@ -52,6 +52,35 @@ const PeoriaBankruptcyPage = () => {
         <li>Legal representation throughout the process.</li>
       </ul>
 
+      <h2 className="text-2xl font-semibold mt-6">Frequently Asked Questions</h2>
+
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">How will bankruptcy affect my credit?</summary>
+        <p className="mt-2">
+          Bankruptcy initially lowers your credit score, but many filers see improvement within **12-24 months** by practicing responsible financial habits.
+        </p>
+      </details>
+
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">Can I file for bankruptcy and keep my car?</summary>
+        <p className="mt-2">
+          Yes. Many people keep their cars using **Arizona’s bankruptcy exemptions** or by filing for **Chapter 13 bankruptcy**, which allows structured repayment.
+        </p>
+      </details>
+
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">Will filing for bankruptcy stop wage garnishment?</summary>
+        <p className="mt-2">
+          Yes. The **automatic stay** goes into effect immediately upon filing, halting wage garnishments, foreclosures, and collection attempts.
+        </p>
+      </details>
+
+      <p className="mt-4">
+        <Link href="/faq" className="text-blue-600 hover:underline">
+          Read more frequently asked questions →
+        </Link>
+      </p>
+
       <h2 className="text-2xl font-semibold mt-6">Schedule a Free Bankruptcy Consultation</h2>
       <p className="mb-4">
         If you are considering bankruptcy, speaking with an attorney can help you determine the best course of action. Contact us today for a **free consultation** and take the first step toward financial relief.

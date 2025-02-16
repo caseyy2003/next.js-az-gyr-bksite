@@ -12,49 +12,45 @@ const YumaBankruptcyPage = () => {
       {/* Page Content */}
       <h1 className="text-3xl font-bold mb-4">Bankruptcy Attorney in Yuma</h1>
       <p className="mb-6 text-lg">
-        If you’re struggling with debt in Yuma, filing for bankruptcy may be the solution you need to regain control of your financial future. Our **experienced bankruptcy attorneys** provide **virtual legal services**, allowing you to complete the process from the comfort of your home. Whether you need **Chapter 7 bankruptcy** for debt elimination or **Chapter 13 bankruptcy** for restructuring, we are here to guide you every step of the way.
+        If you&rsquo;re facing financial challenges in Yuma, bankruptcy may provide the relief you need. Our experienced attorneys offer **virtual bankruptcy services**, allowing you to complete the process remotely.
       </p>
 
       <h2 className="text-2xl font-semibold mt-6">Understanding Your Bankruptcy Options</h2>
       <p className="mb-4">
-        Bankruptcy is a legal process designed to help individuals eliminate or restructure their debt. The most common types of bankruptcy are:
+        Bankruptcy is a legal solution that can help individuals eliminate or restructure debt. Knowing the difference between **Chapter 7** and **Chapter 13** bankruptcy can help you make an informed decision.
       </p>
       <ul className="list-disc ml-6">
-        <li><strong>Chapter 7 Bankruptcy</strong> – Erases most unsecured debts, including credit card balances and medical bills, giving you a fresh start.</li>
-        <li><strong>Chapter 13 Bankruptcy</strong> – Allows individuals with regular income to create a structured repayment plan to catch up on debts while protecting assets.</li>
+        <li><strong>Chapter 7 Bankruptcy</strong> – Eliminates most unsecured debts, such as credit card balances and medical bills, giving you a fresh financial start.</li>
+        <li><strong>Chapter 13 Bankruptcy</strong> – Allows individuals with regular income to develop a structured repayment plan, preventing foreclosure and repossession.</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold mt-6">Benefits of Filing for Bankruptcy in Yuma</h2>
-      <p className="mb-4">
-        Bankruptcy provides immediate relief from debt collectors and long-term financial benefits, including:
-      </p>
-      <ul className="list-disc ml-6">
-        <li>Stops creditor harassment and collection calls.</li>
-        <li>Prevents wage garnishments and lawsuits.</li>
-        <li>Stops foreclosure and repossession actions.</li>
-        <li>Eliminates eligible unsecured debts, offering financial relief.</li>
-        <li>Allows you to rebuild your credit over time.</li>
-      </ul>
+      <h2 className="text-2xl font-semibold mt-6">Frequently Asked Questions</h2>
 
-      <h2 className="text-2xl font-semibold mt-6">Who Qualifies for Bankruptcy?</h2>
-      <p className="mb-4">
-        To file for **Chapter 7**, you must pass a **Means Test**, which compares your income to Arizona’s median. **Chapter 13** is ideal for individuals with regular income who need to reorganize their debts under court supervision. Our attorneys will assess your eligibility and provide personalized legal guidance.
-      </p>
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">Will I lose my house if I file for bankruptcy?</summary>
+        <p className="mt-2">
+          **Chapter 7 bankruptcy** may require selling non-exempt property, but Arizona has **homestead exemptions** that protect your primary residence. **Chapter 13 bankruptcy** allows you to restructure payments and avoid foreclosure.
+        </p>
+      </details>
 
-      <h2 className="text-2xl font-semibold mt-6">How Our Virtual Bankruptcy Services Work</h2>
-      <p className="mb-4">
-        Our firm offers a **virtual bankruptcy process**, providing legal assistance remotely. The process includes:
-      </p>
-      <ul className="list-disc ml-6">
-        <li>Free consultation to evaluate your financial situation.</li>
-        <li>Preparation and filing of all bankruptcy paperwork.</li>
-        <li>Electronic submission of your bankruptcy petition.</li>
-        <li>Legal representation throughout the entire process.</li>
-      </ul>
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">How will bankruptcy affect my credit score?</summary>
+        <p className="mt-2">
+          Bankruptcy will impact your credit, but for many individuals, their **credit score improves within months** because unmanageable debts are removed. Many clients qualify for new credit opportunities within 1-2 years.
+        </p>
+      </details>
 
-      <h2 className="text-2xl font-semibold mt-6">Schedule a Free Bankruptcy Consultation</h2>
-      <p className="mb-4">
-        If you’re considering bankruptcy, consulting with an attorney can help you determine the best course of action. Contact us today for a **free consultation** and take the first step toward financial stability.
+      <details className="border rounded-md p-4 my-4">
+        <summary className="font-semibold cursor-pointer">Can I file for bankruptcy more than once?</summary>
+        <p className="mt-2">
+          Yes. However, there are **waiting periods** between filings. You must wait **8 years** between Chapter 7 filings and **2 years** between Chapter 13 cases. Other combinations have different requirements.
+        </p>
+      </details>
+
+      <p className="mt-4">
+        <Link href="/faq" className="text-blue-600 hover:underline">
+          Read more frequently asked questions →
+        </Link>
       </p>
 
       {/* Lead Capture Form */}
