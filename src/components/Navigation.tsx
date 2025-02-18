@@ -40,7 +40,7 @@ const Navigation = () => {
           <Link href="/about" className="hover:text-gray-300">About</Link>
         </li>
         <li>
-  <Link href="/faq" className="text-blue-600 hover:underline">FAQ</Link>
+  <Link href="/faq" className="hover:text-gray-300">FAQ</Link>
 </li>
         <li className="relative">
           <button
