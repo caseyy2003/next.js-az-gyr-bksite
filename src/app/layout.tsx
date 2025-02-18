@@ -6,6 +6,9 @@ export const metadata = {
   title: "My Blogs - Expert Bankruptcy Advice",
   description: "Expert bankruptcy guidance and services in Maricopa County.",
   keywords: "bankruptcy, attorney, Maricopa County, Phoenix, financial help",
+  other: {
+    "google-site-verification": "y1sNrjqb7N67bs6XXXXX", // Replace with your actual verification code
+  },
 };
 
 export default function RootLayout({
