@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://myazlawfirm.com
+
+# Sitemaps
+Sitemap: https://myazlawfirm.com/sitemap.xml
