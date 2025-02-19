@@ -56,13 +56,8 @@ const BankruptcyCreditScorePage = () => {
       <h1 className="text-3xl font-bold mb-4">How Bankruptcy Affects Your Credit Score & How to Rebuild</h1>
       <p className="text-gray-600 text-sm">Published on February 15, 2025 by <strong>Casey Yontz</strong>, Bankruptcy Attorney</p>
 
-      <Image
-        src="/images/bankruptcy-credit-score.jpg"
-        alt="Bankruptcy and Credit Score"
-        width={800}  // Set an appropriate width
-        height={400} // Set an appropriate height
-        className="w-full my-6 rounded shadow-lg"
-      />
+     {/* Removed the image since it does not exist */}
+
 
       <h2 className="text-2xl font-semibold mt-6">Does Bankruptcy Ruin Your Credit Score?</h2>
       <p>

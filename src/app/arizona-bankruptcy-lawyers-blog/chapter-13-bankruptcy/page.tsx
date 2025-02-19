@@ -56,12 +56,8 @@ const Chapter13BankruptcyPage = () => {
       <h1 className="text-3xl font-bold mb-4">Chapter 13 Bankruptcy: A Debt Repayment Solution</h1>
       <p className="text-gray-600 text-sm">Published on February 14, 2025 by <strong>Casey Yontz</strong>, Bankruptcy Attorney</p>
 
-      <Image
-        src="/images/chapter-13-bankruptcy.jpg" 
-        alt="Chapter 13 Bankruptcy Process"
-        width={800} height={400}
-        className="w-full my-6 rounded shadow-lg"
-      />
+    {/* Removed the image since it does not exist */}
+
 
       <h2 className="text-2xl font-semibold mt-6">What Is Chapter 13 Bankruptcy?</h2>
       <p>

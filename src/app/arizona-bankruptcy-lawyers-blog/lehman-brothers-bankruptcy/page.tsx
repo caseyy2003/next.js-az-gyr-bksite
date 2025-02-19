@@ -35,14 +35,8 @@ const LehmanBrothersBankruptcyPage = () => {
         Published on February 13, 2025 by <strong>Casey Yontz</strong>, Bankruptcy Attorney
       </p>
 
-      <Image
-        src="/images/lehman-brothers-bankruptcy.jpg"
-        alt="Lehman Brothers Bankruptcy"
-        width={800}
-        height={400}
-        className="w-full my-6 rounded shadow-lg"
-        priority
-      />
+     {/* Removed the image since it does not exist */}
+
 
       <h2 className="text-2xl font-semibold mt-6">The Rise and Collapse of Lehman Brothers</h2>
       <p>
