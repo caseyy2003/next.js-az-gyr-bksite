@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Head from "next/head";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
-import Image from 'next/image';
+
 
 const serviceAreas = [
   { name: "Phoenix", slug: "phoenix" },

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Head from "next/head";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
-import Image from "next/image";
+
 import { serviceAreas } from "@/constants/serviceAreas"; // ✅ Import serviceAreas
 
 const Chapter7BankruptcyPage = () => {

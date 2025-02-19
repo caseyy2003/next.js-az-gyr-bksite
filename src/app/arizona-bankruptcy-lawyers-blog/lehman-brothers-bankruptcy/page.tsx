@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 import { serviceAreas } from "@/constants/serviceAreas";
 
