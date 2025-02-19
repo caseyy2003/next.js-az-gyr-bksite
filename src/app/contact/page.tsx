@@ -35,7 +35,7 @@ const ContactPage = () => {
           <p>4425 E Agave Rd, Suite 110</p>
           <p>Phoenix, AZ 85044</p>
           <p className="mt-4"><strong>Phone:</strong> <a href="tel:+14808860339" className="text-blue-600 hover:underline">480-886-0339</a></p>
-          <p><strong>Email:</strong> <a href="mailto:info@yourlawfirm.com" className="text-blue-600 hover:underline">info@yourlawfirm.com</a></p>
+          <p><strong>Email:</strong> <a href="mailto:help@ylglaw.com" className="text-blue-600 hover:underline">help@ylglaw.com</a></p>
         </div>
 
         {/* Contact Form */}
