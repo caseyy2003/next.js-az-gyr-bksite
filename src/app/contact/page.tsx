@@ -55,14 +55,15 @@ const ContactPage = () => {
       <div className="mt-8">
         <h2 className="text-2xl font-semibold mb-4">Our Location</h2>
         <iframe
-          title="Office Location"
-          width="100%"
-          height="350"
-          style={{ border: "0" }}
-          loading="lazy"
-          allowFullScreen
-          src="https://www.google.com/maps/embed/v1/place?q=4425+E+Agave+Rd,+Suite+110,+Phoenix,+AZ+85044&amp;key=YOUR_GOOGLE_MAPS_API_KEY"
-        ></iframe>
+  title="Office Location"
+  width="100%"
+  height="350"
+  style={{ border: "0" }}
+  loading="lazy"
+  allowFullScreen
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.922255330889!2d-111.98501612469416!3d33.29617737326033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b07f2e05c6c2d%3A0xf02b6e4a94605b1d!2s4425%20E%20Agave%20Rd%20Suite%20110%2C%20Phoenix%2C%20AZ%2085044!5e0!3m2!1sen!2sus!4v1700000000000"
+></iframe>
+
       </div>
     </div>
   );
