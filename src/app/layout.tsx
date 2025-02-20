@@ -1,5 +1,6 @@
 import "./globals.css"; // ✅ Ensure correct global styles
 import Navigation from "../components/Navigation"; // ✅ Ensure this path is correct
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export const metadata = {
   title: "My Blogs - Expert Bankruptcy Advice",
