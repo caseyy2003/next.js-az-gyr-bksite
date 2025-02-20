@@ -34,28 +34,28 @@ const Navigation = () => {
     <nav className="bg-gray-900 text-white p-4">
       <ul className="flex space-x-6 items-center">
         <li>
-          <Link href="/" className="hover:text-gray-300">Home</Link>
+          <Link href="/" className="text-white hover:text-gray-300">Home</Link>
         </li>
         <li>
-          <Link href="/about" className="hover:text-gray-300">About</Link>
+          <Link href="/about" className="text-white hover:text-gray-300">About</Link>
         </li>
         <li>
-  <Link href="/faq" className="hover:text-gray-300">FAQ</Link>
-</li>
+          <Link href="/faq" className="text-white hover:text-gray-300">FAQ</Link>
+        </li>
         <li className="relative">
           <button
-            className="hover:text-gray-300"
+            className="text-white hover:text-gray-300"
             onClick={() => setIsServiceAreasOpen(!isServiceAreasOpen)}
           >
             Service Areas ▼
           </button>
           {isServiceAreasOpen && (
-            <ul className="absolute left-0 mt-2 bg-white text-gray-900 shadow-md w-64 rounded">
+            <ul className="absolute left-0 mt-2 bg-gray-800 text-white shadow-md w-64 rounded">
               {cities.map((city) => (
-                <li key={city.slug} className="hover:bg-gray-200">
+                <li key={city.slug} className="hover:bg-gray-700">
                   <Link
                     href={`/bankruptcy-attorney-${city.slug}`}
-                    className="block px-4 py-2"
+                    className="block px-4 py-2 text-white hover:text-gray-300"
                   >
                     Bankruptcy Attorney in {city.name}
                   </Link>
@@ -65,11 +65,12 @@ const Navigation = () => {
           )}
         </li>
         <li>
-        <Link href="/arizona-bankruptcy-lawyers-blog" className="hover:text-gray-300">Blog</Link>
-
+          <Link href="/arizona-bankruptcy-lawyers-blog" className="text-white hover:text-gray-300">
+            Blog
+          </Link>
         </li>
         <li>
-          <Link href="/contact" className="hover:text-gray-300">Contact</Link>
+          <Link href="/contact" className="text-white hover:text-gray-300">Contact</Link>
         </li>
       </ul>
     </nav>
