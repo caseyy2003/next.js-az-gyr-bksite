@@ -16,8 +16,8 @@ const AboutPage = () => {
       {/* Page Content */}
       <h1 className="text-3xl font-bold mb-4">About Our Firm</h1>
       <p>
-        When facing bankruptcy, experience matters. With over 50 years of combined bankruptcy experience, our attorneys—Casey
-        Yontz, Glenn Roethler, and Scott Greeves—have successfully helped thousands of Arizona residents achieve financial freedom.
+        When facing bankruptcy, experience matters. With over 17 years of bankruptcy experience, our attorney—Casey
+        Yontz, has successfully helped thousands of Arizona residents achieve financial freedom.
       </p>
       <p>
         Bankruptcy is complex, but it doesn’t have to be difficult. Our firm was founded to provide high-quality legal
@@ -40,21 +40,9 @@ const AboutPage = () => {
         <li>Western State College of Law, JD</li>
       </ul>
 
-      <h3 className="text-xl font-bold mt-4">Glenn Roethler</h3>
-      <p>Experience: 17+ years of bankruptcy law, extensive casework in Arizona courts</p>
-      <p>Education:</p>
-      <ul className="list-disc ml-6 mt-2">
-        <li>BA, University of Washington</li>
-        <li>JD, Arizona State University</li>
-      </ul>
+ 
 
-      <h3 className="text-xl font-bold mt-4">Scott Greeves</h3>
-      <p>Experience: 20+ years of bankruptcy law, former attorney at the Arizona Department of Revenue</p>
-      <p>Education:</p>
-      <ul className="list-disc ml-6 mt-2">
-        <li>BA, Iowa State University</li>
-        <li>JD, University of Iowa</li>
-      </ul>
+      
 
       <h2 className="text-2xl font-semibold mt-6">Why Choose Our Firm?</h2>
       <ul className="list-disc ml-6 mt-2">

@@ -64,6 +64,26 @@ const BlogPage = () => {
           <p className="text-gray-600 text-sm">Published on February 12, 2025</p>
           <p>A detailed look at the Lehman Brothers bankruptcy and its impact on the global economy.</p>
         </li>
+
+        <li className="mb-4">
+          <h2 className="text-xl font-semibold">
+            <Link href="/arizona-bankruptcy-lawyers-blog/home-loan-in-chapter-13" className="text-blue-600 hover:underline">
+              Getting a Mortgage While in Chapter 13 Bankruptcy
+            </Link>
+          </h2>
+          <p className="text-gray-600 text-sm">Published on February 21, 2025</p>
+          <p>Learn how to secure a mortgage while in Chapter 13 bankruptcy, including court approval, lender requirements, and financial considerations.</p>
+        </li>
+
+        <li className="mb-4">
+          <h2 className="text-xl font-semibold">
+            <Link href="/arizona-bankruptcy-lawyers-blog/chapter-13-bankruptcy-benefits" className="text-blue-600 hover:underline">
+              Understanding Chapter 13 Bankruptcy: A Structured Path to Debt Relief
+            </Link>
+          </h2>
+          <p className="text-gray-600 text-sm">Published on February 21, 2025</p>
+          <p>Explore how Chapter 13 bankruptcy can help protect assets, stop foreclosure, consolidate debt, and provide long-term financial stability.</p>
+        </li>
       </ul>
 
       {/* Service Areas Section for Internal Linking */}
