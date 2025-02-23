@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation"; // ✅ Ensure this path is co
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export const metadata = {
-  title: "My Blogs - Expert Bankruptcy Advice",
+  title: "Bankruptcy Attorney Arizona - Expert Bankruptcy Advice",
   description: "Expert bankruptcy guidance and services in Maricopa County.",
   keywords: "bankruptcy, attorney, Maricopa County, Phoenix, financial help",
   other: {

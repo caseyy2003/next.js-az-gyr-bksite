@@ -22,9 +22,11 @@ const MortgageInChapter13Page = () => {
       {/* Page Content */}
       <h1 className="text-3xl font-bold mb-4">Getting a Mortgage While in Chapter 13 Bankruptcy: What You Need to Know</h1>
       <p className="text-gray-600 text-sm">Published on February 21, 2025 by <strong>Casey Yontz</strong>, Bankruptcy Attorney</p>
+      
 
       <h2 className="text-2xl font-semibold mt-6">Steps to Obtain a Mortgage in Chapter 13 Bankruptcy</h2>
-      
+      <p>Whether or not you can obtain a home loan whilst in chapter 13 bankruptcy is a common question. The good news is that it is possible.</p>
+      <p>Below are generally the steps of how this is obtained.</p>
       <h3 className="text-xl font-semibold mt-4">1. Obtain Court Approval</h3>
       <p>Before applying for a mortgage, you must get approval from the bankruptcy court...</p>
       
