@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 
-const siteUrl = "https://myazlawfirm.com";
+const siteUrl = "https://www.myazlawfirm.com"; // ✅ Updated to www version
 
 // Function to recursively get all routes from the app directory
 const getRoutes = (dir: string, basePath = ""): string[] => {
