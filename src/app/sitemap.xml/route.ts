@@ -5,33 +5,40 @@ import path from "path";
 const siteUrl = "https://www.myazlawfirm.com"; // ✅ Updated to www version
 
 // Function to recursively get all routes from the app directory
-const getRoutes = (dir: string, basePath = ""): string[] => {
+function getRoutes(dir: string, basePath = ""): string[] {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
 
   return entries.flatMap((entry) => {
+    // Full path on the filesystem
     const fullPath = path.join(dir, entry.name);
-    const routePath = `${basePath}/${entry.name}`.replace(/\/page$/, ""); // Normalize route
+    // The "URL path" we build
+    let routePath = `${basePath}/${entry.name}`;
 
     if (entry.isDirectory()) {
+      // Ignore special Next.js folders and directories
       if (
-        entry.name.startsWith("(") || // Ignore special Next.js folders
-        entry.name.startsWith("_") || // Ignore private folders
-        entry.name.startsWith("api") || // Ignore API routes
-        entry.name === "sitemap.xml" // Ignore the sitemap route itself
+        entry.name.startsWith("(") ||
+        entry.name.startsWith("_") ||
+        entry.name.startsWith("api") ||
+        entry.name === "sitemap.xml"
       ) {
         return [];
       }
+      // Recursively check subfolders
       return getRoutes(fullPath, routePath);
     }
 
-    // Include only page directories and ignore files
+    // If it's a "page.tsx" or "page.js" file, the route is just the folder (basePath)
     if (entry.name === "page.tsx" || entry.name === "page.js") {
-      return routePath;
+      return [basePath || "/"]; 
+      // If basePath is "" (root), return "/"
+      // else return basePath
     }
 
+    // Ignore other files
     return [];
   });
-};
+}
 
 export async function GET() {
   const pagesDirectory = path.join(process.cwd(), "src/app");
