@@ -2,16 +2,14 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 
-const siteUrl = "https://www.myazlawfirm.com"; // ✅ Updated to www version
+const siteUrl = "https://www.myazlawfirm.com"; // ✅ Ensure the correct domain
 
 // Function to recursively get all routes from the app directory
 function getRoutes(dir: string, basePath = ""): string[] {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
 
   return entries.flatMap((entry) => {
-    // Full path on the filesystem
     const fullPath = path.join(dir, entry.name);
-    // The "URL path" we build
     let routePath = `${basePath}/${entry.name}`;
 
     if (entry.isDirectory()) {
@@ -24,18 +22,14 @@ function getRoutes(dir: string, basePath = ""): string[] {
       ) {
         return [];
       }
-      // Recursively check subfolders
       return getRoutes(fullPath, routePath);
     }
 
-    // If it's a "page.tsx" or "page.js" file, the route is just the folder (basePath)
+    // ✅ If it's "page.tsx" or "page.js", return the **folder path** only
     if (entry.name === "page.tsx" || entry.name === "page.js") {
-      return [basePath || "/"]; 
-      // If basePath is "" (root), return "/"
-      // else return basePath
+      return [basePath.replace(/\/page$/, "") || "/"];
     }
 
-    // Ignore other files
     return [];
   });
 }
