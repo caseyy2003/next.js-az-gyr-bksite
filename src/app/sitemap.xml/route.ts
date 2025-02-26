@@ -10,7 +10,7 @@ function getRoutes(dir: string, basePath = ""): string[] {
 
   return entries.flatMap((entry) => {
     const fullPath = path.join(dir, entry.name);
-    let routePath = `${basePath}/${entry.name}`;
+    const routePath = `${basePath}/${entry.name}`;
 
     if (entry.isDirectory()) {
       // Ignore special Next.js folders and directories
