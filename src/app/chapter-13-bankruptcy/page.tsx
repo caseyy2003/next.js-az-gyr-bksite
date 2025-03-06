@@ -19,7 +19,7 @@ const Chapter13BankruptcyPage: React.FC = () => {
       <h2 className="text-2xl font-semibold mb-4">Why Our Firm is the Right Choice for Chapter 13 Bankruptcy</h2>
 
       <p className="mb-4">
-        Our attorneys aren't just legal experts; we're compassionate advocates committed to your financial recovery. Our
+        Our attorneys aren&apos;t just legal experts; we&apos;re compassionate advocates committed to your financial recovery. Our
         unmatched experience ensures that your Chapter 13 bankruptcy case is handled professionally and efficiently,
         always aiming for the best possible outcome.
       </p>
@@ -42,7 +42,7 @@ const Chapter13BankruptcyPage: React.FC = () => {
       <h2 className="text-2xl font-semibold mb-4">Understanding Chapter 13 Bankruptcy</h2>
 
       <p className="mb-4">
-        Chapter 13 bankruptcy, also known as "reorganization bankruptcy," is designed to help individuals manage and
+        Chapter 13 bankruptcy, also known as &quot;reorganization bankruptcy,&quot; is designed to help individuals manage and
         repay debts over a period of three to five years. It offers numerous benefits, including:
       </p>
 
@@ -73,7 +73,7 @@ const Chapter13BankruptcyPage: React.FC = () => {
       <h2 className="text-2xl font-semibold mb-4">Begin Your Path to Financial Stability Today</h2>
 
       <p className="mb-6">
-        You don't have to face financial difficulties alone. With decades of Chapter 13 bankruptcy experience and an
+        You don&apos;t have to face financial difficulties alone. With decades of Chapter 13 bankruptcy experience and an
         outstanding track record, our Arizona bankruptcy law firm is here to help you reclaim your financial independence
         and security.
       </p>

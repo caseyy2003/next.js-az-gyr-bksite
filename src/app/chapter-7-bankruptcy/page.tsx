@@ -11,7 +11,7 @@ const Chapter7BankruptcyPage: React.FC = () => {
       <h1 className="text-3xl font-bold mb-6">Expert Chapter 7 Bankruptcy Attorneys in Arizona</h1>
 
       <p className="mb-6">
-        At [Your Firm Name], we understand how overwhelming financial difficulties can be, and we're here to guide you every step of the way. With nearly two decades of dedicated bankruptcy law experience, our firm stands apart as Arizona's trusted leader in providing compassionate, knowledgeable, and effective Chapter 7 bankruptcy representation.
+        We understand how overwhelming financial difficulties can be, and we&apos;re here to guide you every step of the way. With nearly two decades of dedicated bankruptcy law experience, our firm stands apart as Arizona&apos;s trusted leader in providing compassionate, knowledgeable, and effective Chapter 7 bankruptcy representation.
       </p>
 
       <h2 className="text-2xl font-semibold mb-4">Why Choose Our Firm for Your Chapter 7 Bankruptcy?</h2>
@@ -29,7 +29,7 @@ const Chapter7BankruptcyPage: React.FC = () => {
       <h2 className="text-2xl font-semibold mb-4">Understanding Chapter 7 Bankruptcy</h2>
 
       <p className="mb-4">
-        Chapter 7 bankruptcy provides a powerful path to eliminate most or all of your unsecured debts, such as credit cards, medical bills, personal loans, and certain other financial obligations. Often referred to as a "fresh start bankruptcy," Chapter 7 is designed to offer a clean financial slate by:
+        Chapter 7 bankruptcy provides a powerful path to eliminate most or all of your unsecured debts, such as credit cards, medical bills, personal loans, and certain other financial obligations. Often referred to as a &quot;fresh start bankruptcy,&quot; Chapter 7 is designed to offer a clean financial slate by:
       </p>
 
       <ul className="list-disc ml-6 mb-6">
@@ -49,7 +49,7 @@ const Chapter7BankruptcyPage: React.FC = () => {
       <h2 className="text-2xl font-semibold mb-4">Start Your Journey Toward Financial Freedom</h2>
 
       <p className="mb-6">
-        Don’t face your financial challenges alone. With unmatched experience and dedication, our bankruptcy law firm has helped countless clients successfully navigate Chapter 7 bankruptcy and reclaim their lives.
+        Don&apos;t face your financial challenges alone. With unmatched experience and dedication, our bankruptcy law firm has helped countless clients successfully navigate Chapter 7 bankruptcy and reclaim their lives.
       </p>
 
       <LeadCaptureForm />
