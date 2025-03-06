@@ -33,11 +33,11 @@ const MortgageInChapter13Page = () => {
       <h3 className="text-xl font-semibold mt-4">2. Work with an Experienced Lender</h3>
       <p>Once you obtain court approval, the next step is to find a lender willing to work with borrowers in Chapter 13 bankruptcy...</p>
 
-      <h3 className="text-xl font-semibold mt-4">3. Adjust Your Repayment Plan</h3>
-      <p>If your mortgage application is approved, your Chapter 13 repayment plan must be modified to account for the new loan...</p>
+      <h3 className="text-xl font-semibold mt-4">3. Amend Your Chapter 13 Plan</h3>
+      <p>If your mortgage application is approved, your Chapter 13 repayment plan must be modified to account for the payment of the new loan.</p>
 
-      <h3 className="text-xl font-semibold mt-4">4. Attend a Court Hearing</h3>
-      <p>Once your revised repayment plan is prepared, a hearing will be scheduled before the bankruptcy court...</p>
+      <h3 className="text-xl font-semibold mt-4">4. Confirm the New Plan</h3>
+      <p>Once your revised plan is prepared, it will need to be confirmed by the court.</p>
 
       <h2 className="text-2xl font-semibold mt-6">Key Considerations When Seeking a Mortgage in Chapter 13</h2>
       

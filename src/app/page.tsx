@@ -1,4 +1,4 @@
-"use client"; // ✅ Ensure this remains at the top
+"use client"; 
 
 import Link from "next/link";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
