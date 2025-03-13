@@ -162,6 +162,22 @@ const BlogPage = () => {
             Dive into the surprising statistics and underlying factors behind why so many consumers purchase cars they can&apos;t afford—and the financial risks that follow.
           </p>
         </li>
+
+        {/* New Post: Recession Analysis */}
+        <li className="mb-4">
+          <h2 className="text-xl font-semibold">
+            <Link
+              href="/arizona-bankruptcy-lawyers-blog/will-the-us-go-into-recession"
+              className="text-blue-600 hover:underline"
+            >
+              Is the US Heading into a Recession? An In-Depth Analysis
+            </Link>
+          </h2>
+          <p className="text-gray-600 text-sm">Published on February 13, 2025</p>
+          <p>
+            A comprehensive review of historical recessions compared with current economic indicators, trade tensions, and potential government actions.
+          </p>
+        </li>
       </ul>
 
       {/* Service Areas Section for Internal Linking */}
