@@ -178,6 +178,22 @@ const BlogPage = () => {
             A comprehensive review of historical recessions compared with current economic indicators, trade tensions, and potential government actions.
           </p>
         </li>
+
+        {/* New Post: What Kind of Car Can I Afford? */}
+        <li className="mb-4">
+          <h2 className="text-xl font-semibold">
+            <Link
+              href="/arizona-bankruptcy-lawyers-blog/how-to-determine-what-car-you-can-afford"
+              className="text-blue-600 hover:underline"
+            >
+              Can I Afford that Car? A Practical Guide to Car Buying
+            </Link>
+          </h2>
+          <p className="text-gray-600 text-sm">Published on March 31, 2025</p>
+          <p>
+            Learn how to determine the right car for your budget, including costs, financing options, and long-term affordability.
+          </p>
+          </li>
       </ul>
 
       {/* Service Areas Section for Internal Linking */}

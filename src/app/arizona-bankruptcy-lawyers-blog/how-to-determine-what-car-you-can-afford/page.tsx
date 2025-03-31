@@ -105,7 +105,7 @@ const CarAffordabilityPage = () => {
 
       <h2 className="text-2xl font-semibold mt-6">3. Understand Your Credit Score</h2>
       <p className="mt-2">
-        Your credit score plays a pivotal role in determining your interest rate
+        Your credit score plays a big role in determining your interest rate
         and, by extension, your monthly payment. A higher credit score often
         translates into lower interest rates and more favorable loan terms. This
         difference can save you thousands of dollars over the life of the loan{" "}

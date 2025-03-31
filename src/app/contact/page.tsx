@@ -6,7 +6,7 @@ const ContactPage = () => {
     <div className="container mx-auto p-6">
       {/* SEO Metadata */}
       <Head>
-        <title>Contact Us | Arizona Bankruptcy Attorneys</title>
+        <title>Contact Us | My AZ Law Firm</title>
         <meta 
           name="description" 
           content="Contact our experienced Arizona bankruptcy attorneys for a free consultation. We provide expert Chapter 7 &amp; Chapter 13 legal services remotely, serving all of Arizona."
