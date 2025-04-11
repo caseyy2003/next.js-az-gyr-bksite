@@ -9,8 +9,8 @@ const HomePage = () => {
   return (
     <>
       <Head>
-        <title>Arizona Bankruptcy Attorney | Free Virtual Consultations</title>
-        <meta name="description" content="Struggling with debt? Our Arizona bankruptcy attorneys provide expert virtual consultations for Chapter 7 & Chapter 13. Get a free evaluation today." />
+        <title>Bankruptcy Lawyer in Phoenix - Bankruptcy Attorney Near Me</title>
+        <meta name="description" content="Looking for a Bankruptcy Lawyer in Phoenix or an experienced Bankruptcy Attorney Near Me? Let us help you find the debt relief you deserve." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://myazlawfirm.com/" />
         {/* Open Graph for social sharing */}
@@ -22,6 +22,7 @@ const HomePage = () => {
 
       <div className="container mx-auto text-center py-16">
         <h1 className="text-3xl font-bold mb-4">Arizona Bankruptcy Attorney</h1>
+        <h3 className="text-xl mb-4"></h3>
         <p className="text-lg mb-6">
           Struggling with debt? We offer expert bankruptcy consultations for Chapter 7 & Chapter 13—all handled virtually. Get a free evaluation today.
         </p>
@@ -30,8 +31,10 @@ const HomePage = () => {
         <LeadCaptureForm />
 
         {/* Service Areas */}
-        <h2 className="text-2xl font-semibold mt-12">Serving All of Arizona</h2>
+        <h2 className="text-2xl font-semibold mt-12">Is There a Bankruyptcy Lawyer Near Me? Yes. We Serve All of Arizona</h2>
         <br />
+        <h4 className="text-lg mb-4">Asking is there a bankruptcy lawyer near me? Whether you're looking for a bankruptcy lawyer in Phoenix or anywhere in Ariozna, we've got you cover. We serve all of Arizona. </h4>
+        
         <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
           {serviceAreas.map((area) => (
             <li key={area.slug}>
