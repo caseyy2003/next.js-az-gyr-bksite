@@ -33,7 +33,7 @@ const HomePage = () => {
         {/* Service Areas */}
         <h2 className="text-2xl font-semibold mt-12">Is There a Bankruyptcy Lawyer Near Me? Yes. We Serve All of Arizona</h2>
         <br />
-        <h4 className="text-lg mb-4">Asking is there a bankruptcy lawyer near me? Whether you're looking for a bankruptcy lawyer in Phoenix or anywhere in Ariozna, we've got you cover. We serve all of Arizona. </h4>
+        <h4 className="text-lg mb-4">Asking is there a bankruptcy lawyer near me? Whether you are looking for a bankruptcy lawyer in Phoenix or anywhere in Ariozna, we have you covered. We serve all of Arizona. </h4>
         
         <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
           {serviceAreas.map((area) => (
