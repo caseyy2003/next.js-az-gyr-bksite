@@ -21,7 +21,7 @@ const HomePage = () => {
       </Head>
 
       <div className="container mx-auto text-center py-16">
-        <h1 className="text-3xl font-bold mb-4">Bankruptcy Lawyer in Phoenix, Serving All of Arizona</h1>
+        <h1 className="text-3xl font-bold mb-4">Bankruptcy Lawyer in Phoenix - Serving All of Arizona</h1>
         <h3 className="text-xl mb-4"></h3>
         <p className="text-lg mb-6">
           Struggling with debt? We offer expert bankruptcy consultations for Chapter 7 & Chapter 13—all handled virtually. Get a free evaluation today.
