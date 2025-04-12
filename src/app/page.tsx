@@ -9,19 +9,19 @@ const HomePage = () => {
   return (
     <>
       <Head>
-        <title>Bankruptcy Lawyer in Phoenix - Bankruptcy Attorney Near Me</title>
-        <meta name="description" content="Looking for a Bankruptcy Lawyer in Phoenix or an experienced Bankruptcy Attorney Near Me? Let us help you find the debt relief you deserve." />
+        <title>Your Trusted Bankruptcy Lawyer in Phoenix | My AZ Law Firm</title>
+        <meta name="description" content="Looking for a Bankruptcy Lawyer in Phoenix? Asking, is there an experienced bankruptcy attorney near me? We serve all areas in Arizona." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://myazlawfirm.com/" />
         {/* Open Graph for social sharing */}
-        <meta property="og:title" content="Arizona Bankruptcy Attorney | Free Virtual Consultations" />
-        <meta property="og:description" content="Virtual bankruptcy services in Arizona. Free evaluation for Chapter 7 & Chapter 13 bankruptcy." />
+        <meta property="og:title" content="Arizona Bankruptcy Attorney | Consultations" />
+        <meta property="og:description" content="Bankruptcy services in Arizona. Free evaluation for Chapter 7 & Chapter 13 bankruptcy." />
         <meta property="og:url" content="https://myazlawfirm.com/" />
         <meta property="og:type" content="website" />
       </Head>
 
       <div className="container mx-auto text-center py-16">
-        <h1 className="text-3xl font-bold mb-4">Arizona Bankruptcy Attorney</h1>
+        <h1 className="text-3xl font-bold mb-4">Bankruptcy Lawyer in Phoenix, Serving All of Arizona</h1>
         <h3 className="text-xl mb-4"></h3>
         <p className="text-lg mb-6">
           Struggling with debt? We offer expert bankruptcy consultations for Chapter 7 & Chapter 13—all handled virtually. Get a free evaluation today.
