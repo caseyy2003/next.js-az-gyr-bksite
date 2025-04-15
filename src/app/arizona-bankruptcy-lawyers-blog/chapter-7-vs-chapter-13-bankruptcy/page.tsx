@@ -29,10 +29,10 @@ const DifferencesBetweenChapter7AndChapter13Page = () => {
   return (
     <div className="container mx-auto p-6">
       <h1 className="text-3xl font-bold mb-4">
-        Understanding the Key Differences Between Chapter 7 and Chapter 13 Bankruptcy
+       Chapter 7 vs Chapter 13 Bankruptcy: Key Differences Explained
       </h1>
       <p className="text-gray-600 text-sm">
-        Published on February 21, 2025 by <strong>Casey Yontz</strong>, Bankruptcy Attorney
+        Published on April 15, 2025 by <strong>Casey Yontz</strong>, Bankruptcy Attorney
       </p>
 
       {/* Introduction */}
