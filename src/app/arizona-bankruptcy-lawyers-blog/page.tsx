@@ -194,6 +194,21 @@ const BlogPage = () => {
             Learn how to determine the right car for your budget, including costs, financing options, and long-term affordability.
           </p>
           </li>
+
+          <li className="mb-4">
+          <h2 className="text-xl font-semibold">
+            <Link
+              href="/arizona-bankruptcy-lawyers-blog/chapter-7-vs-chapter-13-bankruptcy"
+              className="text-blue-600 hover:underline"
+            >
+              Chapter 7 vs Chapter 13 Bankruptcy: Which One is Right for You?
+            </Link>
+          </h2>
+          <p className="text-gray-600 text-sm">Published on April 15, 2025</p>
+          <p>
+            Understand the differences between Chapter 7 and Chapter 13 bankruptcy, including eligibility, benefits, and long-term implications.
+          </p>
+          </li>
       </ul>
 
       {/* Service Areas Section for Internal Linking */}
