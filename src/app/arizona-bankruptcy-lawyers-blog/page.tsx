@@ -151,7 +151,7 @@ const BlogPage = () => {
         <li className="mb-4">
           <h2 className="text-xl font-semibold">
             <Link
-              href="/arizona-bankruptcy-lawyers-blog/cars-they-cant-afford-statistics"
+              href="/arizona-bankruptcy-lawyers-blog/people-unaffordable-car-loans"
               className="text-blue-600 hover:underline"
             >
               When Dreams Outpace Reality: The Startling Statistics Behind Buying Cars People Can&apos;t Afford

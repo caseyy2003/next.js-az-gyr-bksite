@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <>
       <Head>
-        <title>Your Trusted Bankruptcy Lawyer in Phoenix | My AZ Law Firm</title>
+        <title>Bankruptcy Lawyer in Phoenix Serving All of Arizona</title>
         <meta name="description" content="Looking for a Bankruptcy Lawyer in Phoenix? Asking, is there an experienced bankruptcy attorney near me? We serve all areas in Arizona." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://myazlawfirm.com/" />

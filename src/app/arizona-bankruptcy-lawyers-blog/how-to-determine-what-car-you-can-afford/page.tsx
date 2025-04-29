@@ -240,16 +240,10 @@ const CarAffordabilityPage = () => {
       <h2 className="text-2xl font-semibold mt-6">References</h2>
       <ol className="list-decimal ml-6 mt-2">
         <li id="reference1">
-          Edmunds.{" "}
-          <em>
-            <a
-              href="https://www.edmunds.com/car-buying/how-much-should-your-car-payment-be.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          Edmunds.
               How Much Should Your Car Payment Be?
-            </a>
-          </em>{" "}
+          
+          
           Accessed March 31, 2025.
         </li>
         <li id="reference2">

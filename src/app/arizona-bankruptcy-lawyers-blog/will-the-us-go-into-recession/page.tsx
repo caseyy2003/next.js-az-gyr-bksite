@@ -4,26 +4,23 @@ import LeadCaptureForm from "@/components/LeadCaptureForm";
 import { serviceAreas } from "@/constants/serviceAreas";
 
 export const metadata = {
-  title: "The Lehman Brothers Bankruptcy | Understanding the 2008 Financial Collapse",
-  description:
-    "Explore the collapse of Lehman Brothers, the key factors behind its downfall, and the global financial crisis it triggered.",
-  keywords:
-    "Lehman Brothers Bankruptcy, 2008 Financial Crisis, Investment Bank Collapse, Global Recession, Mortgage Crisis, Economic History",
+  title: "Is the U.S. Heading into a Recession? An In-Depth Analysis",
+  description: "Analyze current economic indicators, historical recessions, trade tensions, and potential policy responses to assess the likelihood of a U.S. recession.",
+  keywords: "U.S. recession, economic indicators, Federal Reserve, inflation, trade tensions, recession outlook",
   openGraph: {
-    title: "The Lehman Brothers Bankruptcy | Understanding the 2008 Financial Collapse",
-    description:
-      "Explore the collapse of Lehman Brothers, the key factors behind its downfall, and the global financial crisis it triggered.",
-    url: "https://yourwebsite.com/arizona-bankruptcy-lawyers-blog/lehman-brothers-bankruptcy",
+    title: "Is the U.S. Heading into a Recession? An In-Depth Analysis",
+    description: "An overview of key economic signals and scenarios that could push the U.S. economy into recession—and how policymakers may respond.",
+    url: "https://yourwebsite.com/arizona-bankruptcy-lawyers-blog/us-recession-outlook",
     type: "article",
     images: [
       {
-        url: "/images/lehman-brothers-bankruptcy.jpg",
+        url: "/images/us-recession-analysis.jpg",
         width: 1200,
         height: 630,
-        alt: "Lehman Brothers Bankruptcy",
-      },
-    ],
-  },
+        alt: "U.S. Recession Outlook"
+      }
+    ]
+  }
 };
 
 const LehmanBrothersBankruptcyPage = () => {
