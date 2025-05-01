@@ -30,7 +30,7 @@ const CarsCantAffordPage = () => {
     <div className="container mx-auto p-6">
       {/* Page Content */}
       <h1 className="text-3xl font-bold mb-4">
-        When Dreams Outpace Reality: The Startling Statistics Behind Buying Cars People Can&#39;t Afford
+        The Scary Statistics of People Buying Cars They Can&#39;t Afford
       </h1>
       <p className="text-gray-600 text-sm">
         Published on March 2, 2025 by <strong>Casey Yontz</strong>, Bankruptcy Attorney

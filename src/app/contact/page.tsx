@@ -23,7 +23,7 @@ const ContactPage = () => {
         We provide expert bankruptcy representation to clients across Arizona. Whether you need guidance on Chapter 7 or Chapter 13 bankruptcy, our team is ready to help.
       </p>
       <p>
-        Reach out today to schedule your <strong>free bankruptcy consultation</strong> and take the first step toward financial freedom.
+        Reach out today to schedule your <strong>free bankruptcy consultation</strong> and take the first step toward financial freedom. Whether you are struggling with debt and have an urgent financial issue, or you are simply looking for more information about your options, we are here to help you understand your options. Our lawyers have decades of experience with bankruptcy and can guide you through every step of the way.
       </p>
 
       {/* Contact Grid */}
