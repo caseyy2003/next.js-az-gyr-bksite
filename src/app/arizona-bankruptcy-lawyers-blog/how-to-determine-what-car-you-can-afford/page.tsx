@@ -2,7 +2,7 @@ import Link from "next/link";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 
 export const metadata = {
-  title: "How to Determine What Car You Can Afford: A Comprehensive Guide",
+  title: "A Guide to Consumers on How to Determine What Car They Can Afford",
   description:
     "A detailed, step-by-step article guiding consumers on essential factors that determine car affordability—from budgeting to financing—complete with research and citations.",
   keywords:
@@ -18,7 +18,7 @@ export const metadata = {
         url: "/images/car-affordability-guide.jpg",
         width: 1200,
         height: 630,
-        alt: "How to Determine What Car You Can Afford: A Comprehensive Guide",
+        alt: "How to Calculate What Car You Can Afford: A Comprehensive Guide",
       },
     ],
   },
@@ -29,7 +29,7 @@ const CarAffordabilityPage = () => {
     <div className="container mx-auto p-6">
       {/* Page Content */}
       <h1 className="text-3xl font-bold mb-4">
-        How to Determine What Car You Can Afford: A Comprehensive Guide
+        How to Determine What Car You Can Afford: A Guide to Stay Within Your Budget
       </h1>
       <p className="text-gray-600 text-sm">
         Published on March 31, 2025 by <strong>Casey Yontz</strong>, Bankruptcy Attorney

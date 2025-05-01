@@ -3,7 +3,7 @@ import LeadCaptureForm from "@/components/LeadCaptureForm";
 import { serviceAreas } from "@/constants/serviceAreas";
 
 export const metadata = {
-  title: "Understanding Vehicle Cram Down in Chapter 13 Bankruptcy",
+  title: "A Detailed Explanation of the Chapter 13 Bankruptcy Vehicle Cram Down",
   description:
     "Learn how the vehicle cram down provision in Chapter 13 bankruptcy can help reduce car loan debt and prevent repossession.",
   keywords:
@@ -28,7 +28,7 @@ export const metadata = {
 const VehicleCramDownPage = () => {
   return (
     <div className="container mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-4">Understanding Vehicle Cram Down in Chapter 13 Bankruptcy</h1>
+      <h1 className="text-3xl font-bold mb-4">What is the Chapter 13 Bankruptcy Vehicle Cram Down?</h1>
       <p className="text-gray-600 text-sm">
         Published on February 21, 2025 by <strong>Casey Yontz</strong>, Bankruptcy Attorney
       </p>

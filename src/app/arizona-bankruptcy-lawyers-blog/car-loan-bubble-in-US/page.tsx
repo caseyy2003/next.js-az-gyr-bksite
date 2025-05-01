@@ -2,7 +2,7 @@ import Link from "next/link";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 
 export const metadata = {
-  title: "Is There a Car Loan Bubble in the US Economy? An In-Depth Analysis",
+  title: "Are We Facing a Car Loan Bubble in the US Economy? An In-Depth Analysis",
   description:
     "Explore real data and expert insights on the US auto loan market to determine whether a car loan bubble is forming.",
   keywords:
@@ -29,7 +29,7 @@ const CarLoanBubblePage = () => {
     <div className="container mx-auto p-6">
       {/* Page Content */}
       <h1 className="text-3xl font-bold mb-4">
-        Is There a Car Loan Bubble in the US Economy? An In-Depth Analysis
+        Are there Now Too Many Bad Car Loans, and Is there a Bubble?
       </h1>
       <p className="text-gray-600 text-sm">
         Published on March 2, 2025 by{" "}
