@@ -19,6 +19,7 @@ export const serviceAreas = [
     { name: "Bullhead City", slug: "bullhead-city" },
     { name: "Lake Havasu City", slug: "lake-havasu-city" },
     { name: "Maricopa", slug: "maricopa" },
+    { name: "Gilbert", slug: "gilbert" },
     { name: "Yuma", slug: "yuma" }
   ];
   

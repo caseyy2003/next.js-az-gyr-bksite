@@ -22,13 +22,14 @@ const cities = [
   { name: "Lake Havasu City", slug: "lake-havasu-city" },
   { name: "Maricopa", slug: "maricopa" },
   { name: "Yuma", slug: "yuma" },
+  { name: "Gilbert", slug: "gilbert" }
 ];
 
 const ServiceAreas = () => {
   return (
     <div className="container mx-auto p-6">
       <h1 className="text-3xl font-bold mb-4">Bankruptcy Services in Arizona</h1>
-      <p className="mb-6">We provide expert bankruptcy services across Arizona, all handled virtually.</p>
+      <p className="mb-6">We provide expert bankruptcy services across Arizona.</p>
 
       <h2 className="text-2xl font-semibold mt-6">Cities We Serve</h2>
       <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">

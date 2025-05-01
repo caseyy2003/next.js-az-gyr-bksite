@@ -25,6 +25,7 @@ const cities = [
   { name: "Lake Havasu City", slug: "lake-havasu-city" },
   { name: "Maricopa", slug: "maricopa" },
   { name: "Yuma", slug: "yuma" },
+  { name: "Gilbert", slug: "gilbert" },
 ];
 
 const practiceAreas = [
