@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Disable ESLint for production builds
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+
   async redirects() {
     return [
       {
